@@ -47,11 +47,14 @@ public class MainActivity extends Activity {
     String str(JSONObject o,String k){return o.optString(k);}
     JSONObject week(int day){return weeks.optJSONObject((day-1)/7);}
     int dp(int v){return (int)(v*getResources().getDisplayMetrics().density);}
-    void screen(String title){
+    void screen(String title){screen(title,false);}
+    void screen(String title,boolean showCredit){
         stopMedia(); stopRecorder(); ticking=false; handler.removeCallbacks(tick); timerLabel=null;
         ScrollView scroll=new ScrollView(this); scroll.setFillViewport(true);scroll.setBackgroundColor(Color.rgb(246,248,246));
         body=new LinearLayout(this);body.setOrientation(LinearLayout.VERTICAL);body.setPadding(dp(18),dp(18),dp(18),dp(24));
-        scroll.addView(body);setContentView(scroll);text(title,26,true);
+        scroll.addView(body);setContentView(scroll);
+        if(showCredit)text("Design & Dev by Duy nguyen",14,true).setTextColor(green);
+        text(title,26,true);
     }
     TextView text(String s,int size,boolean bold){
         TextView t=new TextView(this);t.setText(s);t.setTextSize(size);t.setTextColor(ink);t.setPadding(0,dp(6),0,dp(6));
@@ -63,7 +66,7 @@ public class MainActivity extends Activity {
     }
     void toast(String s){Toast.makeText(this,s,Toast.LENGTH_LONG).show();}
     void home(){
-        screen("Korean30min 2 · 한국어");
+        screen("Korean30min 2 · 한국어",true);
         int done=0;for(int i=1;i<=182;i++)if(prefs.getBoolean("done"+i,false))done++;
         text("Từ số 0 · 26 tuần · 30 phút/ngày",17,false);
         text("Giao tiếp trong sản xuất · Ngữ pháp · Kho từ mở rộng",16,false);
