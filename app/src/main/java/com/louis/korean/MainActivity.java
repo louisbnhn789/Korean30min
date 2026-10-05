@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     android.content.SharedPreferences prefs;
     MediaPlayer player; MediaRecorder recorder; File recording;
     int currentDay=1, q=0, score=0; boolean answered=false;
-    ArrayList<JSONObject> quizItems; boolean listening;
+    ArrayList<JSONObject> quizItems; boolean listening; boolean fromBank=false;
     final int ink=Color.rgb(26,45,63), green=Color.rgb(12,112,101);
     TextView timerLabel; long timerEnd; boolean ticking=false;
     final Handler handler=new Handler(Looper.getMainLooper());
@@ -63,13 +63,16 @@ public class MainActivity extends Activity {
     }
     void toast(String s){Toast.makeText(this,s,Toast.LENGTH_LONG).show();}
     void home(){
-        screen("Korean30min · 한국어");
+        screen("Korean30min 2 · 한국어");
         int done=0;for(int i=1;i<=182;i++)if(prefs.getBoolean("done"+i,false))done++;
         text("Từ số 0 · 26 tuần · 30 phút/ngày",17,false);
+        text("Giao tiếp trong sản xuất · Ngữ pháp · Kho từ mở rộng",16,false);
         text("Đã hoàn thành "+done+" / 182 ngày",19,true);
         ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(182);p.setProgress(done);body.addView(p);
         int next=1;while(next<182&&prefs.getBoolean("done"+next,false))next++;
         final int start=next;button("Tiếp tục ngày "+next,()->lesson(start));
+        button("Ngữ pháp · 40 bài và bài tập",this::grammarHome);
+        button("Kho từ · thêm 1.000 từ/cụm từ",this::vocabularyHome);
         button("Ôn từ cần nhớ",this::review);
         button("Cách học và quyền riêng tư",this::help);
         text("Chọn tuần học",22,true);
@@ -90,6 +93,7 @@ public class MainActivity extends Activity {
         button("Bắt đầu / bắt đầu lại 30 phút",()->{handler.removeCallbacks(tick);timerEnd=SystemClock.elapsedRealtime()+30*60*1000L;ticking=true;handler.post(tick);});
         JSONArray tasks=course.optJSONArray("tasks").optJSONArray(phase);int[] minutes={5,10,8,5,2};
         for(int i=0;i<5;i++)text(minutes[i]+" phút · "+tasks.optString(i),16,false);
+        int recommended=d.optInt("grammarId",0);if(recommended>0&&course.optJSONArray("grammar")!=null){JSONObject g=course.optJSONArray("grammar").optJSONObject(recommended-1);button("Ngữ pháp gợi ý · "+str(g,"title"),()->grammarLesson(g));}
         text("Ghi chú ngôn ngữ",20,true);text(str(wk,"note"),17,false);
         JSONObject drill=d.optJSONObject("drill");if(drill!=null){text("Hangul · luyện âm hôm nay",20,true);text(str(drill,"glyph"),26,true);text(str(drill,"v"),17,false);button("▶ Nghe bài luyện âm",()->play(drill));text(str(drill,"p"),16,false);}
         text("Từ vựng · chạm để nghe",20,true);
@@ -130,7 +134,7 @@ public class MainActivity extends Activity {
         try{player=new MediaPlayer();player.setDataSource(f.getAbsolutePath());player.prepare();player.start();player.setOnCompletionListener(mp->stopMedia());}catch(Exception e){stopMedia();toast("Bản ghi quá ngắn hoặc không hợp lệ. Hãy ghi lại.");}}
     @Override public void onRequestPermissionsResult(int r,String[] p,int[] g){super.onRequestPermissionsResult(r,p,g);if(r==1&&g.length>0&&g[0]==PackageManager.PERMISSION_GRANTED)toggleRecord();else toast("Bạn vẫn học được các phần khác khi không cấp quyền micro.");}
     void startQuiz(boolean listen){
-        listening=listen;quizItems=new ArrayList<>();
+        fromBank=false;listening=listen;quizItems=new ArrayList<>();
         // Weekly checkpoints include the past four weeks; final checkpoint covers the whole course.
         int w=(currentDay-1)/7;int first=(currentDay%7==0)?(w==25?2:Math.max(w>=2?2:0,w-3)):w;
         for(int k=first;k<=w;k++){JSONArray a=weeks.optJSONObject(k).optJSONArray("words");for(int i=0;i<a.length();i++){JSONObject item=a.optJSONObject(i);try{item.put("topic",str(weeks.optJSONObject(k),"title"));}catch(JSONException ignored){}quizItems.add(item);}}
@@ -142,7 +146,7 @@ public class MainActivity extends Activity {
         if(listening){text("Nghe rồi chọn nghĩa tiếng Việt.",18,false);button("▶ Nghe / nghe lại",()->play(item));}
         else{text("Chủ đề: "+str(item,"topic"),16,false);text(str(item,"h"),38,true);text("Chọn nghĩa tiếng Việt (gợi âm hiện sau khi trả lời).",16,false);}
         ArrayList<String> options=new ArrayList<>();options.add(str(item,"v"));
-        ArrayList<String> pool=new ArrayList<>();for(int w=0;w<weeks.length();w++){JSONArray a=weeks.optJSONObject(w).optJSONArray("words");for(int i=0;i<a.length();i++)pool.add(str(a.optJSONObject(i),"v"));}
+        ArrayList<String> pool=new ArrayList<>();if(fromBank&&bank()!=null){for(int i=0;i<bank().length();i++)pool.add(str(bank().optJSONObject(i),"v"));}else{for(int w=0;w<weeks.length();w++){JSONArray a=weeks.optJSONObject(w).optJSONArray("words");for(int i=0;i<a.length();i++)pool.add(str(a.optJSONObject(i),"v"));}}
         Collections.shuffle(pool);for(String v:pool)if(!options.contains(v)){options.add(v);if(options.size()==4)break;}Collections.shuffle(options);
         TextView feedback=text("",17,false);
         for(String option:options)button(option,()->{
@@ -151,18 +155,18 @@ public class MainActivity extends Activity {
             prefs.edit().putBoolean("weak"+str(item,"a"),!ok).apply();
         });
         button("Câu tiếp theo",()->{if(!answered){toast("Hãy chọn một đáp án trước");return;}q++;if(q==12)result();else question();});
-        button("Thoát kiểm tra",()->new AlertDialog.Builder(this).setMessage("Thoát sẽ bỏ kết quả lần này.").setPositiveButton("Thoát",(a,b)->lesson(currentDay)).setNegativeButton("Tiếp tục",null).show());
+        button("Thoát kiểm tra",()->new AlertDialog.Builder(this).setMessage("Thoát sẽ bỏ kết quả lần này.").setPositiveButton("Thoát",(a,b)->{if(fromBank)vocabularyHome();else lesson(currentDay);}).setNegativeButton("Tiếp tục",null).show());
     }
     void result(){
-        screen("Kết quả: "+score+"/12");String key=(listening?"listen":"read")+currentDay;prefs.edit().putInt(key,Math.max(score,prefs.getInt(key,0))).apply();
+        screen("Kết quả: "+score+"/12");String key=(fromBank?"bank":"")+(listening?"listen":"read")+currentDay;prefs.edit().putInt(key,Math.max(score,prefs.getInt(key,0))).apply();
         text(score>=10?"Bạn đã nhớ khá tốt. Hãy nói lại mẫu câu không nhìn chữ.":"Hãy ôn các từ chưa nhớ và làm lại bài kiểm tra.",19,false);
         text("Đây là kiểm tra tự luyện, không phải chứng chỉ TOPIK. Điểm cao nhất được lưu trên máy.",16,false);
-        button("Ôn từ cần nhớ",this::review);button("Về ngày học",()->lesson(currentDay));
+        button("Ôn từ cần nhớ",this::review);button(fromBank?"Về kho từ":"Về ngày học",()->{if(fromBank)vocabularyHome();else lesson(currentDay);});
     }
     void review(){
         screen("Ôn từ cần nhớ");button("← Trang chính",this::home);int count=0;
-        for(int w=0;w<weeks.length();w++){JSONArray a=weeks.optJSONObject(w).optJSONArray("words");for(int i=0;i<a.length();i++){JSONObject item=a.optJSONObject(i);
-            if(prefs.getBoolean("weak"+str(item,"a"),false)){count++;button(str(item,"h")+" · "+str(item,"p")+" · "+str(item,"v"),()->play(item));button("Tôi đã nhớ "+str(item,"h"),()->{prefs.edit().putBoolean("weak"+str(item,"a"),false).apply();review();});}}}
+        JSONArray all=bank();if(all!=null)for(int i=0;i<all.length();i++){JSONObject item=all.optJSONObject(i);
+            if(prefs.getBoolean("weak"+str(item,"a"),false)){count++;button(str(item,"h")+" · "+str(item,"p")+" · "+str(item,"v"),()->play(item));button("Tôi đã nhớ "+str(item,"h"),()->{prefs.edit().putBoolean("weak"+str(item,"a"),false).apply();review();});}}
         if(count==0)text("Chưa có từ sai cần ôn. Hãy làm bài kiểm tra ở ngày học.",18,false);
     }
     void writing(JSONObject item,int day){
@@ -194,6 +198,74 @@ public class MainActivity extends Activity {
         button("Xóa bản ghi âm",()->{stopMedia();new File(getFilesDir(),"practice.m4a").delete();toast("Đã xóa bản ghi");});
         button("Đặt lại toàn bộ tiến độ",()->new AlertDialog.Builder(this).setMessage("Xóa ngày đã học, điểm và danh sách từ sai?").setPositiveButton("Xóa",(a,b)->{prefs.edit().clear().apply();home();}).setNegativeButton("Hủy",null).show());button("← Trang chính",this::home);
     }
+    JSONArray bank(){return course.optJSONArray("vocabulary");}
+    void grammarHome(){
+        screen("Ngữ pháp · 40 bài");button("← Trang chính",this::home);
+        text("Học từng cấu trúc: cách dùng → ví dụ có audio → lỗi dễ nhầm → bài tập. Ưu tiên 1 bài mỗi lần học; ôn lại trước khi học cấu trúc mới.",17,false);
+        JSONArray lessons=course.optJSONArray("grammar");if(lessons==null){text("Bản APK này chưa có nội dung mở rộng.",18,false);return;}
+        for(int i=0;i<lessons.length();i++){final JSONObject lesson=lessons.optJSONObject(i);int id=lesson.optInt("id");button("Bài "+id+" · "+str(lesson,"title")+"\n"+str(lesson,"level")+" · điểm "+prefs.getInt("grammar"+id,0)+"/2",()->grammarLesson(lesson));}
+    }
+    void grammarLesson(JSONObject lesson){
+        screen("Bài "+lesson.optInt("id")+" · "+str(lesson,"title"));button("← Mục ngữ pháp",this::grammarHome);
+        text("Cấu trúc",20,true);text(str(lesson,"pattern"),22,true);
+        text("Cách dùng",20,true);text(str(lesson,"explanation"),18,false);
+        text("Lỗi dễ nhầm",20,true);text(str(lesson,"mistake"),17,false);
+        text("Ví dụ trong công việc",20,true);
+        JSONArray ex=lesson.optJSONArray("examples");for(int i=0;i<ex.length();i++){JSONObject item=ex.optJSONObject(i);text(str(item,"h"),25,true);if(!str(item,"p").isEmpty())text(str(item,"p"),16,false);text(str(item,"v"),17,false);button("▶ Nghe ví dụ "+(i+1),()->play(item));}
+        text("Tự luyện: thay người, vật liệu hoặc thời gian trong câu mẫu. Đọc lại câu mới, ghi âm và so với mẫu. Ví dụ không thay thế WI của công ty.",16,false);
+        button("Bài tập cấu trúc · 2 câu",()->grammarQuestion(lesson,0,0));
+        button("Đánh dấu đã học",()->{prefs.edit().putBoolean("grammarDone"+lesson.optInt("id"),true).apply();toast("Đã lưu bài ngữ pháp đã học");});
+    }
+    void grammarQuestion(JSONObject lesson,int index,int correct){
+        if(index>=lesson.optJSONArray("quiz").length()){
+            int id=lesson.optInt("id");prefs.edit().putInt("grammar"+id,Math.max(correct,prefs.getInt("grammar"+id,0))).apply();
+            screen("Ngữ pháp · Kết quả "+correct+"/2");text("Hãy giải thích vì sao dùng cấu trúc này và tự đặt một câu trong công việc.",18,false);button("Xem lại bài",()->grammarLesson(lesson));button("Mục ngữ pháp",this::grammarHome);return;
+        }
+        JSONObject question=lesson.optJSONArray("quiz").optJSONObject(index);
+        screen(str(lesson,"title")+" · "+(index+1)+"/2");
+        text("Chọn phần phù hợp với nghĩa tiếng Việt.",17,false);text(str(question,"meaning"),19,true);text(str(question,"prompt"),26,true);
+        final boolean[] selected={false};final int[] earned={0};TextView response=text("",17,false);
+        ArrayList<String> options=new ArrayList<>();JSONArray answers=question.optJSONArray("options");for(int i=0;i<answers.length();i++)options.add(answers.optString(i));Collections.shuffle(options);
+        for(String option:options)button(option,()->{if(selected[0])return;selected[0]=true;boolean ok=option.equals(str(question,"answer"));earned[0]=ok?1:0;response.setText((ok?"✓ Đúng":"Chưa đúng")+" · đáp án: "+str(question,"answer")+"\n"+str(question,"explain"));});
+        button("Tiếp tục",()->{if(!selected[0]){toast("Hãy chọn đáp án trước");return;}grammarQuestion(lesson,index+1,correct+earned[0]);});button("← Xem lại bài",()->grammarLesson(lesson));
+    }
+    void vocabularyHome(){
+        screen("Kho từ · "+(bank()==null?0:bank().length())+" mục");button("← Trang chính",this::home);
+        text("Thêm 1.000 từ/cụm từ về giao tiếp trong sản xuất. Tìm theo nghĩa tiếng Việt hoặc chữ bản ngữ. Học thêm 5–10 mục mỗi lần; không cần học tất cả ngay.",16,false);
+        if(bank()==null)return;
+        EditText search=new EditText(this);search.setSingleLine(true);search.setHint("Tìm từ, ví dụ: kiểm tra, đóng gói…");body.addView(search);
+        LinkedHashSet<String> cats=new LinkedHashSet<>();cats.add("Tất cả chủ đề");for(int i=0;i<bank().length();i++)cats.add(str(bank().optJSONObject(i),"category"));
+        ArrayList<String> categories=new ArrayList<>(cats);Spinner spinner=new Spinner(this);ArrayAdapter<String> adapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,categories);adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);spinner.setAdapter(adapter);body.addView(spinner);
+        button("Kiểm tra đọc kho từ · 12 câu",()->startBankQuiz(false,search.getText().toString(),categories.get(spinner.getSelectedItemPosition())));
+        button("Kiểm tra nghe kho từ · 12 câu",()->startBankQuiz(true,search.getText().toString(),categories.get(spinner.getSelectedItemPosition())));
+        LinearLayout listing=new LinearLayout(this);listing.setOrientation(LinearLayout.VERTICAL);body.addView(listing);
+        final int[] limit={40};Runnable render=()->renderVocabulary(listing,search.getText().toString(),categories.get(spinner.getSelectedItemPosition()),limit);
+        search.addTextChangedListener(new android.text.TextWatcher(){public void beforeTextChanged(CharSequence s,int st,int count,int after){}public void onTextChanged(CharSequence s,int st,int before,int count){limit[0]=40;render.run();}public void afterTextChanged(android.text.Editable e){}});
+        spinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener(){public void onItemSelected(android.widget.AdapterView<?> p,View v,int pos,long id){limit[0]=40;render.run();}public void onNothingSelected(android.widget.AdapterView<?> p){}});
+        render.run();
+    }
+    ArrayList<JSONObject> filteredWords(String query,String category){
+        String needle=query.trim().toLowerCase(Locale.ROOT);ArrayList<JSONObject> result=new ArrayList<>();
+        if(bank()==null)return result;for(int i=0;i<bank().length();i++){JSONObject item=bank().optJSONObject(i);boolean topic=category.equals("Tất cả chủ đề")||category.equals(str(item,"category"));String hay=(str(item,"h")+" "+str(item,"p")+" "+str(item,"v")).toLowerCase(Locale.ROOT);if(topic&&hay.contains(needle))result.add(item);}return result;
+    }
+    void renderVocabulary(LinearLayout listing,String query,String category,int[] limit){
+        listing.removeAllViews();ArrayList<JSONObject> matches=filteredWords(query,category);TextView count=new TextView(this);count.setText("Tìm thấy "+matches.size()+" mục · hiển thị "+Math.min(limit[0],matches.size()));count.setTextSize(16);count.setPadding(0,dp(12),0,dp(8));listing.addView(count);
+        for(int i=0;i<Math.min(limit[0],matches.size());i++){JSONObject item=matches.get(i);Button b=new Button(this);b.setAllCaps(false);b.setText(str(item,"h")+"\n"+str(item,"v")+(prefs.getBoolean("known"+str(item,"a"),false)?" ✓":""));listing.addView(b);b.setOnClickListener(v->vocabularyWord(item));}
+        if(limit[0]<matches.size()){Button more=new Button(this);more.setAllCaps(false);more.setText("Xem thêm 40 mục");listing.addView(more);more.setOnClickListener(v->{limit[0]+=40;renderVocabulary(listing,query,category,limit);});}
+    }
+    void vocabularyWord(JSONObject item){
+        screen(str(item,"h"));text(str(item,"p"),20,false);text(str(item,"v"),23,true);text(str(item,"category"),16,false);
+        button("▶ Nghe / nghe lại",()->play(item));
+        button("Tôi đã nhớ",()->{prefs.edit().putBoolean("known"+str(item,"a"),true).putBoolean("weak"+str(item,"a"),false).apply();toast("Đã lưu mục đã nhớ");});
+        button("Thêm vào ôn tập",()->{prefs.edit().putBoolean("weak"+str(item,"a"),true).apply();toast("Đã thêm vào mục ôn tập");});
+        button("🎙 Ghi âm / dừng",this::toggleRecord);button("▶ Nghe giọng mình",this::playRecording);
+        button("← Kho từ",this::vocabularyHome);
+    }
+    void startBankQuiz(boolean listen,String query,String category){
+        ArrayList<JSONObject> pool=filteredWords(query,category);if(pool.size()<12){toast("Cần ít nhất 12 mục để kiểm tra. Hãy mở rộng tìm kiếm hoặc chọn Tất cả chủ đề.");return;}
+        Collections.shuffle(pool);quizItems=new ArrayList<>(pool.subList(0,12));listening=listen;fromBank=true;q=0;score=0;question();
+    }
+
     @Override protected void onPause(){super.onPause();stopMedia();stopRecorder();}
     @Override protected void onDestroy(){super.onDestroy();handler.removeCallbacksAndMessages(null);stopMedia();stopRecorder();}
     @Override protected void onSaveInstanceState(Bundle b){b.putInt("day",currentDay);super.onSaveInstanceState(b);}

@@ -7,6 +7,8 @@ root=Path(__file__).parent/'app/src/main/assets'
 course=json.loads((root/'course.json').read_text())
 items={i['a']:i['h'] for w in course['weeks'] for i in [*w['words'],w['sentence']]}
 items.update({d['drill']['a']:d['drill']['h'] for d in course['days'] if 'drill' in d})
+items.update({i['a']:i['h'] for i in course.get('vocabulary',[])})
+items.update({i['a']:i['h'] for lesson in course.get('grammar',[]) for i in lesson['examples']})
 out=root/'audio';out.mkdir(exist_ok=True)
 def generate(pair):
     key,text=pair;path=out/(key+'.mp3')

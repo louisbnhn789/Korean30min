@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -25,11 +25,17 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate course
-        run: python curriculum.py
+        run: |
+          pip install pypinyin==0.53.0
+          python curriculum.py
+          python expand_course.py
       - uses: actions/cache@v4
         with:
           path: app/src/main/assets/audio
-          key: korean-gtts-v1-${{ hashFiles('app/src/main/assets/course.json') }}
+          key: korean-gtts-v2-${{ hashFiles('app/src/main/assets/course.json') }}
+          restore-keys: |
+            korean-gtts-v2-
+            korean-gtts-v1-
       - name: Package offline Korean audio
         run: |
           pip install gTTS==2.5.4
@@ -50,8 +56,13 @@ jobs:
           data=json.load(open('app/src/main/assets/course.json'))
           names={i['a'] for w in data['weeks'] for i in [*w['words'],w['sentence']]}
           names.update(d['drill']['a'] for d in data['days'] if 'drill' in d)
+          names.update(i['a'] for i in data['vocabulary'])
+          names.update(i['a'] for lesson in data['grammar'] for i in lesson['examples'])
+          assert len(data['grammar']) == 40 and data['expansionCount'] == 1000
+          assert len({x['h'] for x in data['vocabulary']}) == len(data['vocabulary'])
           with zipfile.ZipFile('app/build/outputs/apk/debug/app-debug.apk') as apk:
               assert all('assets/audio/'+n+'.mp3' in apk.namelist() for n in names)
+              assert all(apk.getinfo('assets/audio/'+n+'.mp3').file_size > 100 for n in names)
           PY
           cp app/build/outputs/apk/debug/app-debug.apk Korean30min.apk
       - uses: actions/upload-artifact@v4
