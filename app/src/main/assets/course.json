@@ -1,0 +1,3431 @@
+{
+  "weeks": [
+    {
+      "title": "Hangul: ghép phụ âm và nguyên âm",
+      "note": "Hangul ghép chữ thành khối âm tiết: ㄱ + ㅏ = 가. ㅇ ở đầu âm tiết không có âm riêng; ở cuối có âm ng. Âm ㄱ/ㄷ/ㅂ/ㅈ thay đổi theo vị trí; gợi âm Latin chỉ là điểm tựa, hãy nghe mẫu. Học tên chữ và hình chữ qua phần bổ sung từng ngày.",
+      "words": [
+        {
+          "h": "가",
+          "p": "ga",
+          "v": "âm ga",
+          "a": "64ee5293d31bc58b"
+        },
+        {
+          "h": "나",
+          "p": "na",
+          "v": "âm na",
+          "a": "1098bbe54520ab2a"
+        },
+        {
+          "h": "다",
+          "p": "da",
+          "v": "âm da",
+          "a": "822b7db6f6886f57"
+        },
+        {
+          "h": "라",
+          "p": "ra",
+          "v": "âm ra",
+          "a": "d2121a871ca59e3b"
+        },
+        {
+          "h": "마",
+          "p": "ma",
+          "v": "âm ma",
+          "a": "0a8a81fee098641d"
+        },
+        {
+          "h": "바",
+          "p": "ba",
+          "v": "âm ba",
+          "a": "f6a780a386d59bfa"
+        },
+        {
+          "h": "사",
+          "p": "sa",
+          "v": "âm sa",
+          "a": "98ebd37ce3c1cd6a"
+        },
+        {
+          "h": "아",
+          "p": "a",
+          "v": "âm a",
+          "a": "d6ce479be9ddc9b7"
+        },
+        {
+          "h": "자",
+          "p": "ja",
+          "v": "âm ja",
+          "a": "34f404d9d0a79aa5"
+        },
+        {
+          "h": "차",
+          "p": "cha",
+          "v": "âm cha bật hơi",
+          "a": "6ccd3f82b0317e51"
+        },
+        {
+          "h": "카",
+          "p": "ka",
+          "v": "âm ka bật hơi",
+          "a": "473c94998acbc9e1"
+        },
+        {
+          "h": "타",
+          "p": "ta",
+          "v": "âm ta bật hơi",
+          "a": "7e40449e6f383f05"
+        }
+      ],
+      "sentence": {
+        "h": "가, 나, 다, 라, 마, 바, 사, 아, 자, 차, 카, 타.",
+        "p": "ga na da ra ma ba sa a ja cha ka ta",
+        "v": "Luyện đọc từng khối âm tiết, nghe rồi nhắc lại.",
+        "a": "4bb4072dc7b2cbbf"
+      }
+    },
+    {
+      "title": "Hangul: nguyên âm và phụ âm cuối",
+      "note": "ㅓ eo khác ㅗ o; ㅜ u khác ㅡ eu. 받침 là phụ âm cuối khối âm tiết; nhiều phụ âm cuối quy về 7 âm cuối. Khi gặp nguyên âm ở âm tiết sau thường nối âm: 한국어 nghe gần han-gu-geo. Âm căng ㄲ/ㄸ/ㅃ/ㅆ/ㅉ khác âm bật hơi ㅋ/ㅌ/ㅍ/ㅊ.",
+      "words": [
+        {
+          "h": "파",
+          "p": "pa",
+          "v": "âm pa bật hơi",
+          "a": "98aede974077c5c7"
+        },
+        {
+          "h": "하",
+          "p": "ha",
+          "v": "âm ha",
+          "a": "3c12bb52442aa6e6"
+        },
+        {
+          "h": "어",
+          "p": "eo",
+          "v": "âm eo",
+          "a": "228794e2524374dc"
+        },
+        {
+          "h": "오",
+          "p": "o",
+          "v": "âm o",
+          "a": "c0ccf82e09f1e873"
+        },
+        {
+          "h": "우",
+          "p": "u",
+          "v": "âm u",
+          "a": "637bfe7928f524a3"
+        },
+        {
+          "h": "으",
+          "p": "eu",
+          "v": "âm eu",
+          "a": "963c2374ff4c553e"
+        },
+        {
+          "h": "이",
+          "p": "i",
+          "v": "âm i",
+          "a": "8bafb6b7d17ead49"
+        },
+        {
+          "h": "애",
+          "p": "ae",
+          "v": "âm ae",
+          "a": "a9fee06ad11f5bbd"
+        },
+        {
+          "h": "에",
+          "p": "e",
+          "v": "âm e",
+          "a": "dd7f4bf020e9b767"
+        },
+        {
+          "h": "와",
+          "p": "wa",
+          "v": "âm wa",
+          "a": "d536e6255a4151ea"
+        },
+        {
+          "h": "위",
+          "p": "wi",
+          "v": "âm wi",
+          "a": "e0bebb354d8f7f3b"
+        },
+        {
+          "h": "한국어",
+          "p": "hangugeo",
+          "v": "tiếng Hàn",
+          "a": "ea3252281bc3bcec"
+        }
+      ],
+      "sentence": {
+        "h": "한국어를 배웁니다.",
+        "p": "hangugeoreul baeumnida",
+        "v": "Tôi học tiếng Hàn.",
+        "a": "395ce7710bee2150"
+      }
+    },
+    {
+      "title": "Chào hỏi lịch sự",
+      "note": "Trong công ty nên bắt đầu bằng lời chào lịch sự. 안녕하세요 dùng phổ biến; 안녕하십니까 trang trọng hơn. 감사합니다 cảm ơn. 안녕히 가세요 nói với người đi; 안녕히 계세요 nói với người ở lại.",
+      "words": [
+        {
+          "h": "안녕하세요",
+          "p": "annyeonghaseyo",
+          "v": "xin chào",
+          "a": "2c68318e35297111"
+        },
+        {
+          "h": "안녕하십니까",
+          "p": "annyeonghasimnikka",
+          "v": "xin chào trang trọng",
+          "a": "6420fd4cb2e20dc0"
+        },
+        {
+          "h": "감사합니다",
+          "p": "gamsahamnida",
+          "v": "cảm ơn",
+          "a": "9d3815f2e8ff35e3"
+        },
+        {
+          "h": "죄송합니다",
+          "p": "joesonghamnida",
+          "v": "xin lỗi",
+          "a": "46ce53f2332052b6"
+        },
+        {
+          "h": "괜찮습니다",
+          "p": "gwaenchanseumnida",
+          "v": "không sao",
+          "a": "b68ab84980185057"
+        },
+        {
+          "h": "네",
+          "p": "ne",
+          "v": "vâng",
+          "a": "1c0ddfd005093840"
+        },
+        {
+          "h": "아니요",
+          "p": "aniyo",
+          "v": "không",
+          "a": "9474acc7539b7e2c"
+        },
+        {
+          "h": "안녕히 가세요",
+          "p": "annyeonghi gaseyo",
+          "v": "chào người đi",
+          "a": "7706d0176ef69852"
+        },
+        {
+          "h": "안녕히 계세요",
+          "p": "annyeonghi gyeseyo",
+          "v": "chào người ở lại",
+          "a": "ecc9311f8fd95a5a"
+        },
+        {
+          "h": "수고하셨습니다",
+          "p": "sugohasyeotseumnida",
+          "v": "anh chị đã vất vả rồi",
+          "a": "02a46c3c544f1b7e"
+        },
+        {
+          "h": "잠시만요",
+          "p": "jamsimanyo",
+          "v": "xin chờ một chút",
+          "a": "9e1c2a1aea4d296d"
+        },
+        {
+          "h": "부탁드립니다",
+          "p": "butakdeurimnida",
+          "v": "kính nhờ anh chị",
+          "a": "b4429a8cb3b1b546"
+        }
+      ],
+      "sentence": {
+        "h": "안녕하세요. 잘 부탁드립니다.",
+        "p": "annyeonghaseyo jal butakdeurimnida",
+        "v": "Xin chào. Mong được anh chị giúp đỡ.",
+        "a": "7780f13c19f064dd"
+      }
+    },
+    {
+      "title": "Giới thiệu và chức danh",
+      "note": "저는 ...입니다: Tôi là... Dùng 저는 thay 나는 khi nói lịch sự. 씨 dùng sau tên người; 님 thể hiện kính trọng, thường gắn chức danh như 팀장님. Không tự thêm 님 vào tên/chức danh của mình.",
+      "words": [
+        {
+          "h": "저",
+          "p": "jeo",
+          "v": "tôi lịch sự",
+          "a": "ac0e9ef613fd92c8"
+        },
+        {
+          "h": "이름",
+          "p": "ireum",
+          "v": "tên",
+          "a": "253d1510caf53620"
+        },
+        {
+          "h": "베트남",
+          "p": "beteunam",
+          "v": "Việt Nam",
+          "a": "7828e86d4b195798"
+        },
+        {
+          "h": "회사",
+          "p": "hoesa",
+          "v": "công ty",
+          "a": "a109dcd7f6f11c2e"
+        },
+        {
+          "h": "직원",
+          "p": "jigwon",
+          "v": "nhân viên",
+          "a": "680ce6b5107e3b64"
+        },
+        {
+          "h": "동료",
+          "p": "dongnyo",
+          "v": "đồng nghiệp",
+          "a": "60cd6085b9cc16cf"
+        },
+        {
+          "h": "팀장",
+          "p": "timjang",
+          "v": "trưởng nhóm",
+          "a": "6d4cfd80fdb24d2b"
+        },
+        {
+          "h": "부장",
+          "p": "bujang",
+          "v": "trưởng phòng",
+          "a": "01b3143b55839388"
+        },
+        {
+          "h": "사장",
+          "p": "sajang",
+          "v": "giám đốc công ty",
+          "a": "ede38c8825edb7fb"
+        },
+        {
+          "h": "품질팀",
+          "p": "pumjiltim",
+          "v": "nhóm chất lượng",
+          "a": "b1393591b6da1a7f"
+        },
+        {
+          "h": "생산팀",
+          "p": "saengsantim",
+          "v": "nhóm sản xuất",
+          "a": "9a1a4f4066b1bb61"
+        },
+        {
+          "h": "담당자",
+          "p": "damdangja",
+          "v": "người phụ trách",
+          "a": "c9cacdac4264cd8d"
+        }
+      ],
+      "sentence": {
+        "h": "저는 루이입니다. 베트남 사람입니다. 품질팀에서 일합니다.",
+        "p": "jeoneun ru-i-imnida beteunam saramimnida pumjiltimeseo ilhamnida",
+        "v": "Tôi là Louis. Tôi là người Việt Nam. Tôi làm ở nhóm chất lượng.",
+        "a": "3eed4ac34f85e28d"
+      }
+    },
+    {
+      "title": "Số Hán Hàn",
+      "note": "일 이 삼... dùng cho ngày tháng, phút, mã số và nhiều số đo. Số 11 là 십일; 20 là 이십. Số điện thoại thường đọc từng chữ số; số 0 đọc 공. Đừng dùng số lượng để thay cách đọc mã linh kiện.",
+      "words": [
+        {
+          "h": "일",
+          "p": "il",
+          "v": "một Hán Hàn",
+          "a": "dfc76879e2f5c3ea"
+        },
+        {
+          "h": "이",
+          "p": "i",
+          "v": "hai Hán Hàn",
+          "a": "8bafb6b7d17ead49"
+        },
+        {
+          "h": "삼",
+          "p": "sam",
+          "v": "ba Hán Hàn",
+          "a": "3cd6c40aac5fd42e"
+        },
+        {
+          "h": "사",
+          "p": "sa",
+          "v": "bốn Hán Hàn",
+          "a": "98ebd37ce3c1cd6a"
+        },
+        {
+          "h": "오",
+          "p": "o",
+          "v": "năm Hán Hàn",
+          "a": "c0ccf82e09f1e873"
+        },
+        {
+          "h": "육",
+          "p": "yuk",
+          "v": "sáu Hán Hàn",
+          "a": "432a18159c59981f"
+        },
+        {
+          "h": "칠",
+          "p": "chil",
+          "v": "bảy Hán Hàn",
+          "a": "e8eb2f9b25b9fd2f"
+        },
+        {
+          "h": "팔",
+          "p": "pal",
+          "v": "tám Hán Hàn",
+          "a": "aab1afda0edcd3ae"
+        },
+        {
+          "h": "구",
+          "p": "gu",
+          "v": "chín Hán Hàn",
+          "a": "ffa3c0de0f615f11"
+        },
+        {
+          "h": "십",
+          "p": "sip",
+          "v": "mười",
+          "a": "c7470d030eddae16"
+        },
+        {
+          "h": "백",
+          "p": "baek",
+          "v": "một trăm",
+          "a": "f30a48779ab0b5cd"
+        },
+        {
+          "h": "천",
+          "p": "cheon",
+          "v": "một nghìn",
+          "a": "b201938cc759f557"
+        }
+      ],
+      "sentence": {
+        "h": "수량은 백 개입니다.",
+        "p": "suryangeun baek gaeimnida",
+        "v": "Số lượng là 100 cái.",
+        "a": "bf20f46a7ad5b780"
+      }
+    },
+    {
+      "title": "Thời gian và số thuần Hàn",
+      "note": "Giờ dùng số thuần Hàn; phút dùng số Hán Hàn. 하나 둘 셋 넷 đổi thành 한 두 세 네 trước lượng từ: 한 개 / 두 시. 30 phút là 삼십 분. 오늘/내일 đặt trước hành động để nói hôm nay/ngày mai.",
+      "words": [
+        {
+          "h": "하나",
+          "p": "hana",
+          "v": "một thuần Hàn",
+          "a": "556dcbf069a950eb"
+        },
+        {
+          "h": "둘",
+          "p": "dul",
+          "v": "hai thuần Hàn",
+          "a": "ca76b1284fc2088d"
+        },
+        {
+          "h": "셋",
+          "p": "set",
+          "v": "ba thuần Hàn",
+          "a": "28ed1f7d8986d21d"
+        },
+        {
+          "h": "넷",
+          "p": "net",
+          "v": "bốn thuần Hàn",
+          "a": "2752a0238ad7b1ee"
+        },
+        {
+          "h": "다섯",
+          "p": "daseot",
+          "v": "năm thuần Hàn",
+          "a": "0d616c5afd4feb13"
+        },
+        {
+          "h": "여섯",
+          "p": "yeoseot",
+          "v": "sáu thuần Hàn",
+          "a": "e3da184cbf43240a"
+        },
+        {
+          "h": "시간",
+          "p": "sigan",
+          "v": "thời gian / giờ",
+          "a": "4692cef5ac69eb37"
+        },
+        {
+          "h": "분",
+          "p": "bun",
+          "v": "phút",
+          "a": "ca4a187881dbf529"
+        },
+        {
+          "h": "오늘",
+          "p": "oneul",
+          "v": "hôm nay",
+          "a": "3bc6235e1d18162f"
+        },
+        {
+          "h": "내일",
+          "p": "naeil",
+          "v": "ngày mai",
+          "a": "1e07b94ba5182a41"
+        },
+        {
+          "h": "오전",
+          "p": "ojeon",
+          "v": "buổi sáng / AM",
+          "a": "1087feb238ccd110"
+        },
+        {
+          "h": "오후",
+          "p": "ohu",
+          "v": "buổi chiều / PM",
+          "a": "7575a29f7d674595"
+        }
+      ],
+      "sentence": {
+        "h": "오전 아홉 시에 회의를 시작합니다. 매일 삼십 분 공부합니다.",
+        "p": "ojeon ahop sie hoeuireul sijakhamnida maeil samsip bun gongbuhamnida",
+        "v": "Bắt đầu họp lúc 9 giờ sáng. Tôi học 30 phút mỗi ngày.",
+        "a": "d0e0e7419c038a9e"
+      }
+    },
+    {
+      "title": "Địa điểm và vị trí trong nhà máy",
+      "note": "에 diễn đạt đích/vị trí; 에서 thường là nơi hành động xảy ra. 창고에 있습니다: có ở kho. 창고에서 일합니다: làm việc tại kho. 어디에 있습니까？ hỏi ở đâu.",
+      "words": [
+        {
+          "h": "공장",
+          "p": "gongjang",
+          "v": "nhà máy",
+          "a": "19d82475f0166d70"
+        },
+        {
+          "h": "사무실",
+          "p": "samusil",
+          "v": "văn phòng",
+          "a": "e94254252a6c5131"
+        },
+        {
+          "h": "현장",
+          "p": "hyeonjang",
+          "v": "hiện trường sản xuất",
+          "a": "90d78fc6fd542ae2"
+        },
+        {
+          "h": "창고",
+          "p": "changgo",
+          "v": "kho",
+          "a": "5f4ebee4ce9930e7"
+        },
+        {
+          "h": "검사실",
+          "p": "geomsasil",
+          "v": "phòng kiểm tra",
+          "a": "b9b4197c02d9066e"
+        },
+        {
+          "h": "식당",
+          "p": "sikdang",
+          "v": "nhà ăn",
+          "a": "fe047fb6c566f277"
+        },
+        {
+          "h": "화장실",
+          "p": "hwajangsil",
+          "v": "nhà vệ sinh",
+          "a": "477b8e1cccfde276"
+        },
+        {
+          "h": "여기",
+          "p": "yeogi",
+          "v": "ở đây",
+          "a": "c13089162f79c617"
+        },
+        {
+          "h": "저기",
+          "p": "jeogi",
+          "v": "ở kia",
+          "a": "1a8b5723b01cfd93"
+        },
+        {
+          "h": "왼쪽",
+          "p": "oenjjok",
+          "v": "bên trái",
+          "a": "dc0103c11a2b107b"
+        },
+        {
+          "h": "오른쪽",
+          "p": "oreunjjok",
+          "v": "bên phải",
+          "a": "f594aa6a15b9381c"
+        },
+        {
+          "h": "어디",
+          "p": "eodi",
+          "v": "ở đâu",
+          "a": "c1ee1b7e560f9f3a"
+        }
+      ],
+      "sentence": {
+        "h": "검사실은 어디에 있습니까? 창고 오른쪽에 있습니다.",
+        "p": "geomsasileun eodie itseumnikka changgo oreunjjoge itseumnida",
+        "v": "Phòng kiểm tra ở đâu? Ở bên phải kho.",
+        "a": "a486761ef880ae55"
+      }
+    },
+    {
+      "title": "Chỉ dẫn và yêu cầu cơ bản",
+      "note": "Động từ + 아/어 주세요 là xin hãy làm... 확인해 주세요: hãy kiểm tra giúp. -(으)십시오 trang trọng hơn. Luyện yêu cầu ngắn rõ ràng; tránh nói trống không với đồng nghiệp.",
+      "words": [
+        {
+          "h": "확인하다",
+          "p": "hwaginhada",
+          "v": "xác nhận / kiểm tra lại",
+          "a": "895c2bcd51e10cf1"
+        },
+        {
+          "h": "보내다",
+          "p": "bonaeda",
+          "v": "gửi",
+          "a": "8af300ffd85ed5a1"
+        },
+        {
+          "h": "받다",
+          "p": "batda",
+          "v": "nhận",
+          "a": "5af01487318c0c57"
+        },
+        {
+          "h": "기다리다",
+          "p": "gidarida",
+          "v": "chờ",
+          "a": "1f9765247406d52d"
+        },
+        {
+          "h": "시작하다",
+          "p": "sijakada",
+          "v": "bắt đầu",
+          "a": "93e3308b9dd20149"
+        },
+        {
+          "h": "멈추다",
+          "p": "meomchuda",
+          "v": "dừng",
+          "a": "eaee887b30c38d73"
+        },
+        {
+          "h": "다시",
+          "p": "dasi",
+          "v": "lại",
+          "a": "920b0d402f08f1fb"
+        },
+        {
+          "h": "먼저",
+          "p": "meonjeo",
+          "v": "trước tiên",
+          "a": "c1ddf2fcaeed84cd"
+        },
+        {
+          "h": "천천히",
+          "p": "cheoncheonhi",
+          "v": "chậm rãi",
+          "a": "71c0b7db98a07445"
+        },
+        {
+          "h": "빨리",
+          "p": "ppalli",
+          "v": "nhanh",
+          "a": "a5443c04aa0fdc08"
+        },
+        {
+          "h": "같이",
+          "p": "gachi",
+          "v": "cùng nhau",
+          "a": "d44da011993f2a6e"
+        },
+        {
+          "h": "도와주다",
+          "p": "dowajuda",
+          "v": "giúp đỡ",
+          "a": "1505f995680e9a46"
+        }
+      ],
+      "sentence": {
+        "h": "수량을 확인해 주세요. 결과를 보내 주세요.",
+        "p": "suryangeul hwaginhae juseyo gyeolgwareul bonae juseyo",
+        "v": "Hãy kiểm tra lại số lượng. Hãy gửi kết quả giúp tôi.",
+        "a": "92769baeeb899fce"
+      }
+    },
+    {
+      "title": "An toàn và ESD",
+      "note": "Không hiểu hướng dẫn an toàn thì hỏi lại trước khi thao tác. -지 마세요: xin đừng... 안전모를 착용해 주세요: hãy đội mũ bảo hộ. Từ vựng này giúp giao tiếp; thực hiện quy trình an toàn của nhà máy.",
+      "words": [
+        {
+          "h": "안전",
+          "p": "anjeon",
+          "v": "an toàn",
+          "a": "beff908259d22050"
+        },
+        {
+          "h": "위험",
+          "p": "wiheom",
+          "v": "nguy hiểm",
+          "a": "baaff05e434f85e3"
+        },
+        {
+          "h": "주의",
+          "p": "juui",
+          "v": "chú ý",
+          "a": "acc90fbf66686d20"
+        },
+        {
+          "h": "장갑",
+          "p": "janggap",
+          "v": "găng tay",
+          "a": "bb003394f5f694de"
+        },
+        {
+          "h": "보호안경",
+          "p": "bohoangyeong",
+          "v": "kính bảo hộ",
+          "a": "96118a41ca81d44e"
+        },
+        {
+          "h": "안전화",
+          "p": "anjeonhwa",
+          "v": "giày bảo hộ",
+          "a": "3143b8ae5ef048d8"
+        },
+        {
+          "h": "정전기",
+          "p": "jeongjeongi",
+          "v": "tĩnh điện",
+          "a": "7ed8ce75f8f9a561"
+        },
+        {
+          "h": "접지",
+          "p": "jeopji",
+          "v": "nối đất",
+          "a": "ad5287e37f0ffdfe"
+        },
+        {
+          "h": "손목밴드",
+          "p": "sonmokbaendeu",
+          "v": "vòng tay chống tĩnh điện",
+          "a": "a419475a905de7c7"
+        },
+        {
+          "h": "전원",
+          "p": "jeonwon",
+          "v": "nguồn điện",
+          "a": "8fb0c7d2329da1d3"
+        },
+        {
+          "h": "비상정지",
+          "p": "bisangjeongji",
+          "v": "dừng khẩn cấp",
+          "a": "2b9784c2c4aa7a2d"
+        },
+        {
+          "h": "착용하다",
+          "p": "chagyonghada",
+          "v": "mang / đeo bảo hộ",
+          "a": "7b6ded356af6a610"
+        }
+      ],
+      "sentence": {
+        "h": "정전기 방지 손목밴드를 착용해 주세요. 전원을 확인해 주세요.",
+        "p": "jeongjeongi bangji sonmokbaendeureul chagyonghae juseyo jeonwoneul hwaginhae juseyo",
+        "v": "Hãy đeo vòng tay chống tĩnh điện. Hãy kiểm tra nguồn điện.",
+        "a": "557892acd40baaed"
+      }
+    },
+    {
+      "title": "Linh kiện điện tử",
+      "note": "Danh từ + 을/를 đánh dấu đối tượng tác động: 부품을 확인합니다. Sau phụ âm dùng 을; sau nguyên âm dùng 를. Tên linh kiện/mã hàng phải đối chiếu bản vẽ hoặc BOM, không tự suy đoán.",
+      "words": [
+        {
+          "h": "부품",
+          "p": "bupum",
+          "v": "linh kiện",
+          "a": "abdef91e78abe977"
+        },
+        {
+          "h": "제품",
+          "p": "jepum",
+          "v": "sản phẩm",
+          "a": "60be380dfd52bdfe"
+        },
+        {
+          "h": "기판",
+          "p": "gipan",
+          "v": "bo mạch",
+          "a": "b51296b36433a64b"
+        },
+        {
+          "h": "저항",
+          "p": "jeohang",
+          "v": "điện trở",
+          "a": "7e7900336788f593"
+        },
+        {
+          "h": "콘덴서",
+          "p": "kondenseo",
+          "v": "tụ điện",
+          "a": "361bb1bd32f4b9bf"
+        },
+        {
+          "h": "커넥터",
+          "p": "keonekteo",
+          "v": "đầu nối",
+          "a": "79792bc0bb4514c3"
+        },
+        {
+          "h": "케이블",
+          "p": "keibeul",
+          "v": "cáp",
+          "a": "7a864661424a0de7"
+        },
+        {
+          "h": "안테나",
+          "p": "antena",
+          "v": "ăng ten",
+          "a": "63a58a3db8a94841"
+        },
+        {
+          "h": "배터리",
+          "p": "baeteori",
+          "v": "pin",
+          "a": "5e29d5dcb84b4546"
+        },
+        {
+          "h": "화면",
+          "p": "hwamyeon",
+          "v": "màn hình",
+          "a": "b5361f64b2ea31de"
+        },
+        {
+          "h": "나사",
+          "p": "nasa",
+          "v": "vít",
+          "a": "562ea18a34c58aed"
+        },
+        {
+          "h": "라벨",
+          "p": "rabel",
+          "v": "nhãn",
+          "a": "3115766cad9ec082"
+        }
+      ],
+      "sentence": {
+        "h": "기판과 커넥터를 확인해 주세요. 케이블을 연결해 주세요.",
+        "p": "gipangwa keonekteoreul hwaginhae juseyo keibeureul yeongyeolhae juseyo",
+        "v": "Hãy kiểm tra bo mạch và đầu nối. Hãy nối cáp.",
+        "a": "a6d3e97861c264e7"
+      }
+    },
+    {
+      "title": "Lắp ráp và công đoạn",
+      "note": "Danh từ + 순서대로: theo thứ tự... -고 nối hành động đơn giản: 확인하고 조립합니다. Công đoạn cụ thể phải theo WI thực tế. Đọc câu mẫu rồi thay tên linh kiện bằng linh kiện trên dây chuyền.",
+      "words": [
+        {
+          "h": "조립",
+          "p": "jorip",
+          "v": "lắp ráp",
+          "a": "f2443b5f106b7b9b"
+        },
+        {
+          "h": "공정",
+          "p": "gongjeong",
+          "v": "công đoạn / quá trình",
+          "a": "21195d3b445ae61a"
+        },
+        {
+          "h": "납땜",
+          "p": "napttaem",
+          "v": "hàn thiếc",
+          "a": "7b7c36a6167dd325"
+        },
+        {
+          "h": "도포",
+          "p": "dopo",
+          "v": "bôi / phủ",
+          "a": "31ed323e701ff1c3"
+        },
+        {
+          "h": "체결",
+          "p": "chegyeol",
+          "v": "siết / lắp chặt",
+          "a": "a8e1259e5336fecb"
+        },
+        {
+          "h": "세척",
+          "p": "secheok",
+          "v": "làm sạch",
+          "a": "dbad2c8ac34968cd"
+        },
+        {
+          "h": "건조",
+          "p": "geonjo",
+          "v": "sấy khô",
+          "a": "2a0d9757ce8c1508"
+        },
+        {
+          "h": "연결",
+          "p": "yeongyeol",
+          "v": "kết nối",
+          "a": "32dd2947e74266d5"
+        },
+        {
+          "h": "분리",
+          "p": "bulli",
+          "v": "tách ra",
+          "a": "1499a1014e91608b"
+        },
+        {
+          "h": "순서",
+          "p": "sunseo",
+          "v": "thứ tự",
+          "a": "ef711cfc76747ee6"
+        },
+        {
+          "h": "작업표준서",
+          "p": "jageoppyojunseo",
+          "v": "hướng dẫn thao tác WI",
+          "a": "b06834338bbeae67"
+        },
+        {
+          "h": "작업자",
+          "p": "jageopja",
+          "v": "người thao tác",
+          "a": "7498fcd33cdf9365"
+        }
+      ],
+      "sentence": {
+        "h": "작업표준서의 순서대로 조립해 주세요.",
+        "p": "jageoppyojunseoui sunseodaero joriphae juseyo",
+        "v": "Hãy lắp ráp theo thứ tự trong hướng dẫn thao tác.",
+        "a": "7edea5d924327044"
+      }
+    },
+    {
+      "title": "Kế hoạch và sản lượng",
+      "note": "...은/는 ...입니다 dùng báo cáo ngắn: 생산량은...입니다. 목표는...입니다: mục tiêu là... 수량은...개입니다: số lượng...cái. Luyện đọc số liệu thật nhưng không đưa thông tin mật vào bản ghi chia sẻ.",
+      "words": [
+        {
+          "h": "생산",
+          "p": "saengsan",
+          "v": "sản xuất",
+          "a": "b3df362a51cdd23e"
+        },
+        {
+          "h": "계획",
+          "p": "gyehoek",
+          "v": "kế hoạch",
+          "a": "b0fe4ea3ac5ac402"
+        },
+        {
+          "h": "목표",
+          "p": "mokpyo",
+          "v": "mục tiêu",
+          "a": "3182dd7d3d31e49a"
+        },
+        {
+          "h": "생산량",
+          "p": "saengsannyang",
+          "v": "sản lượng",
+          "a": "f51704a1c747586d"
+        },
+        {
+          "h": "수량",
+          "p": "suryang",
+          "v": "số lượng",
+          "a": "4a12f9833048db20"
+        },
+        {
+          "h": "라인",
+          "p": "rain",
+          "v": "dây chuyền",
+          "a": "f3cd692f5481df80"
+        },
+        {
+          "h": "주간",
+          "p": "jugan",
+          "v": "ca ngày / ban ngày",
+          "a": "2392bb5e3aa698e8"
+        },
+        {
+          "h": "야간",
+          "p": "yagan",
+          "v": "ca đêm / ban đêm",
+          "a": "c955cc6d841ec81e"
+        },
+        {
+          "h": "잔업",
+          "p": "janeop",
+          "v": "tăng ca",
+          "a": "c89e8dacf06d8535"
+        },
+        {
+          "h": "완료",
+          "p": "wallyo",
+          "v": "hoàn thành",
+          "a": "727333ab0740d7d8"
+        },
+        {
+          "h": "진행",
+          "p": "jinhaeng",
+          "v": "đang tiến hành",
+          "a": "52e94db6f68c7bdf"
+        },
+        {
+          "h": "개",
+          "p": "gae",
+          "v": "cái / lượng từ",
+          "a": "a57ab05712bfb600"
+        }
+      ],
+      "sentence": {
+        "h": "오늘 생산 목표는 천 개입니다. 현재 팔백 개를 완료했습니다.",
+        "p": "oneul saengsan mokpyoneun cheon gaeimnida hyeonjae palbaek gaereul wallyohaetseumnida",
+        "v": "Mục tiêu hôm nay là 1000 cái. Hiện đã hoàn thành 800 cái.",
+        "a": "71a74855e081778a"
+      }
+    },
+    {
+      "title": "IQC OQC và kiểm tra chất lượng",
+      "note": "검사 thường là kiểm tra/inspection, 시험 thường là thử nghiệm/test. 수입검사 là IQC; 출하검사 là kiểm tra trước xuất hàng. 용어 của từng công ty có thể khác; dùng thêm IQC/OQC để rõ ý.",
+      "words": [
+        {
+          "h": "품질",
+          "p": "pumjil",
+          "v": "chất lượng",
+          "a": "ce22e94483cb4fbf"
+        },
+        {
+          "h": "검사",
+          "p": "geomsa",
+          "v": "kiểm tra inspection",
+          "a": "cf57fb29da311818"
+        },
+        {
+          "h": "수입검사",
+          "p": "suipgeomsa",
+          "v": "kiểm tra đầu vào IQC",
+          "a": "07822a5a414675b9"
+        },
+        {
+          "h": "공정검사",
+          "p": "gongjeonggeomsa",
+          "v": "kiểm tra trong công đoạn",
+          "a": "36eeb3da55977c1d"
+        },
+        {
+          "h": "출하검사",
+          "p": "chulhageomsa",
+          "v": "kiểm tra xuất hàng OQC",
+          "a": "6038dba3240f4b35"
+        },
+        {
+          "h": "전수검사",
+          "p": "jeonsugeomsa",
+          "v": "kiểm tra 100 phần trăm",
+          "a": "36ee97e8a668cfdf"
+        },
+        {
+          "h": "샘플링",
+          "p": "saempeulling",
+          "v": "lấy mẫu",
+          "a": "0448b5b2e12af630"
+        },
+        {
+          "h": "합격",
+          "p": "hapgyeok",
+          "v": "đạt",
+          "a": "6c1136cf74d35b66"
+        },
+        {
+          "h": "불합격",
+          "p": "bulhapgyeok",
+          "v": "không đạt",
+          "a": "79549f8a7e67724e"
+        },
+        {
+          "h": "기준",
+          "p": "gijun",
+          "v": "tiêu chuẩn / tiêu chí",
+          "a": "eaea55bff6009374"
+        },
+        {
+          "h": "판정",
+          "p": "panjeong",
+          "v": "phán định",
+          "a": "fb77d92a3c6bcd69"
+        },
+        {
+          "h": "검사표",
+          "p": "geomsapyo",
+          "v": "phiếu kiểm tra",
+          "a": "4afb49b8a719ef88"
+        }
+      ],
+      "sentence": {
+        "h": "수입검사가 완료되었습니다. 검사 결과는 합격입니다.",
+        "p": "suipgeomsaga wallyodoeeotseumnida geomsa gyeolgwaneun hapgyeogimnida",
+        "v": "Kiểm tra đầu vào đã hoàn thành. Kết quả kiểm tra là đạt.",
+        "a": "84fcb948ca312465"
+      }
+    },
+    {
+      "title": "Lỗi và ngoại quan",
+      "note": "불량 là lỗi/hàng lỗi; 불량품 là sản phẩm lỗi. ...이/가 있습니다 báo có lỗi. ...을 발견했습니다: đã phát hiện... Ghi vị trí và số lượng; không kết luận nguyên nhân khi chưa xác nhận.",
+      "words": [
+        {
+          "h": "불량",
+          "p": "bullyang",
+          "v": "lỗi / không đạt",
+          "a": "3a58f816cf2de398"
+        },
+        {
+          "h": "외관",
+          "p": "oegwan",
+          "v": "ngoại quan",
+          "a": "5a957dbe5e7e78c4"
+        },
+        {
+          "h": "스크래치",
+          "p": "seukraechi",
+          "v": "vết xước",
+          "a": "ca2dd87e2fc8bdd0"
+        },
+        {
+          "h": "균열",
+          "p": "gyunyeol",
+          "v": "vết nứt",
+          "a": "1f7d222c7fc245bd"
+        },
+        {
+          "h": "오염",
+          "p": "oyeom",
+          "v": "nhiễm bẩn",
+          "a": "d12991a2ead44d71"
+        },
+        {
+          "h": "변색",
+          "p": "byeonsaek",
+          "v": "đổi màu",
+          "a": "f252a0259f9f992c"
+        },
+        {
+          "h": "파손",
+          "p": "pason",
+          "v": "hư vỡ",
+          "a": "447f12b319211efe"
+        },
+        {
+          "h": "변형",
+          "p": "byeonhyeong",
+          "v": "biến dạng",
+          "a": "27a9c9e1408b7ffb"
+        },
+        {
+          "h": "누락",
+          "p": "nurak",
+          "v": "thiếu / bỏ sót",
+          "a": "353a30893a2db349"
+        },
+        {
+          "h": "기포",
+          "p": "gipo",
+          "v": "bọt khí",
+          "a": "aef64927f5d55474"
+        },
+        {
+          "h": "박리",
+          "p": "bangni",
+          "v": "bong tách",
+          "a": "26fb1657f3fb715c"
+        },
+        {
+          "h": "위치",
+          "p": "wichi",
+          "v": "vị trí",
+          "a": "6c0b9dd710ab0fde"
+        }
+      ],
+      "sentence": {
+        "h": "화면에 균열이 있습니다. 불량품은 분리해 주세요.",
+        "p": "hwamyeone gyunyeori itseumnida bullyangpumeun bullihae juseyo",
+        "v": "Màn hình có vết nứt. Hãy tách riêng sản phẩm lỗi.",
+        "a": "c031e0205bca976c"
+      }
+    },
+    {
+      "title": "Đo kích thước và dung sai",
+      "note": "치수 đo kích thước; 공차 là dung sai. 기준을 벗어났습니다: vượt ra ngoài tiêu chuẩn. Đơn vị và điểm đo phải theo bản vẽ. Số thập phân thường đọc 점: 일 점 이 밀리미터 = 1.2 mm.",
+      "words": [
+        {
+          "h": "측정",
+          "p": "cheukjeong",
+          "v": "đo",
+          "a": "7476f6e632aa76a4"
+        },
+        {
+          "h": "치수",
+          "p": "chisu",
+          "v": "kích thước",
+          "a": "e736dbe40b657ff3"
+        },
+        {
+          "h": "길이",
+          "p": "giri",
+          "v": "chiều dài",
+          "a": "75aba55303fbffdf"
+        },
+        {
+          "h": "폭",
+          "p": "pok",
+          "v": "chiều rộng",
+          "a": "a986625d9a2fb282"
+        },
+        {
+          "h": "높이",
+          "p": "nopi",
+          "v": "chiều cao",
+          "a": "c2c8f0007728427c"
+        },
+        {
+          "h": "두께",
+          "p": "dukke",
+          "v": "độ dày",
+          "a": "6953a4195620df2e"
+        },
+        {
+          "h": "공차",
+          "p": "gongcha",
+          "v": "dung sai",
+          "a": "fdb71b87248a93b9"
+        },
+        {
+          "h": "도면",
+          "p": "domyeon",
+          "v": "bản vẽ",
+          "a": "e9d9ecd76beb2285"
+        },
+        {
+          "h": "측정기",
+          "p": "cheukjeonggi",
+          "v": "thiết bị đo",
+          "a": "e059a32e8c53f817"
+        },
+        {
+          "h": "교정",
+          "p": "gyojeong",
+          "v": "hiệu chuẩn",
+          "a": "0439cb7335c34164"
+        },
+        {
+          "h": "밀리미터",
+          "p": "millimiteo",
+          "v": "milimét",
+          "a": "5be47de4ddb5e5e6"
+        },
+        {
+          "h": "측정값",
+          "p": "cheukjeonggap",
+          "v": "giá trị đo",
+          "a": "928b7caab2897416"
+        }
+      ],
+      "sentence": {
+        "h": "두께를 측정했습니다. 측정값이 공차를 벗어났습니다.",
+        "p": "dukkereul cheukjeonghaetseumnida cheukjeonggapssi gongchareul beoseonatseumnida",
+        "v": "Đã đo độ dày. Giá trị đo nằm ngoài dung sai.",
+        "a": "2f759f4cf4f75f43"
+      }
+    },
+    {
+      "title": "RF và kiểm tra chức năng",
+      "note": "검사를 실시합니다: thực hiện kiểm tra. 데이터는 ...에 저장했습니다: dữ liệu đã lưu tại... RF data và chức năng có thể khác tiêu chí; ghi rõ model và điều kiện. Tiếng Hàn có từ mượn đọc theo Hangul.",
+      "words": [
+        {
+          "h": "알에프",
+          "p": "arepeu",
+          "v": "RF đọc tiếng Hàn",
+          "a": "a702210d60588b7b"
+        },
+        {
+          "h": "주파수",
+          "p": "jupasu",
+          "v": "tần số",
+          "a": "a6084394eede7241"
+        },
+        {
+          "h": "신호",
+          "p": "sinho",
+          "v": "tín hiệu",
+          "a": "617aa217dbc92e8a"
+        },
+        {
+          "h": "통신",
+          "p": "tongsin",
+          "v": "truyền thông / giao tiếp",
+          "a": "44b99c9a1fc2e9b2"
+        },
+        {
+          "h": "연결상태",
+          "p": "yeongyeolsangtae",
+          "v": "trạng thái kết nối",
+          "a": "77de98752b336205"
+        },
+        {
+          "h": "기능",
+          "p": "gineung",
+          "v": "chức năng",
+          "a": "0e09e85c99c11646"
+        },
+        {
+          "h": "지그",
+          "p": "jigeu",
+          "v": "đồ gá jig",
+          "a": "821681b756f06586"
+        },
+        {
+          "h": "데이터",
+          "p": "deiteo",
+          "v": "dữ liệu",
+          "a": "e921be8e69cd87b5"
+        },
+        {
+          "h": "저장",
+          "p": "jeojang",
+          "v": "lưu",
+          "a": "5fb926229090001c"
+        },
+        {
+          "h": "복사",
+          "p": "boksa",
+          "v": "sao chép",
+          "a": "37b3d3b11b2637f6"
+        },
+        {
+          "h": "감도",
+          "p": "gamdo",
+          "v": "độ nhạy",
+          "a": "cede979447aa9da0"
+        },
+        {
+          "h": "테스트",
+          "p": "teseuteu",
+          "v": "kiểm tra test",
+          "a": "bc19d3b3c9e45818"
+        }
+      ],
+      "sentence": {
+        "h": "알에프 테스트는 완료했습니다. 데이터를 복사해 주세요.",
+        "p": "arepeu teseuteuneun wallyohaetseumnida deiteoreul boksahae juseyo",
+        "v": "Đã hoàn thành kiểm tra RF. Hãy sao chép dữ liệu giúp tôi.",
+        "a": "34a7d825f24f8147"
+      }
+    },
+    {
+      "title": "Thử độ tin cậy",
+      "note": "시험 조건: điều kiện thử nghiệm. ...동안: trong khoảng thời gian... 온도는...도입니다: nhiệt độ là... Không dùng câu mẫu làm tiêu chuẩn thử; lấy điều kiện từ yêu cầu khách hàng đã phê duyệt.",
+      "words": [
+        {
+          "h": "신뢰성",
+          "p": "silloeseong",
+          "v": "độ tin cậy",
+          "a": "f39157d665911404"
+        },
+        {
+          "h": "시험",
+          "p": "siheom",
+          "v": "thử nghiệm",
+          "a": "ff65dc582ce71198"
+        },
+        {
+          "h": "조건",
+          "p": "jogeon",
+          "v": "điều kiện",
+          "a": "291ac97193c19dda"
+        },
+        {
+          "h": "온도",
+          "p": "ondo",
+          "v": "nhiệt độ",
+          "a": "d798e80bd2d0c8c8"
+        },
+        {
+          "h": "습도",
+          "p": "seupdo",
+          "v": "độ ẩm",
+          "a": "6a39dc792dabc09c"
+        },
+        {
+          "h": "고온",
+          "p": "goon",
+          "v": "nhiệt độ cao",
+          "a": "f35d81fc687c020b"
+        },
+        {
+          "h": "저온",
+          "p": "jeoon",
+          "v": "nhiệt độ thấp",
+          "a": "be08cd701a831217"
+        },
+        {
+          "h": "샘플",
+          "p": "saempeul",
+          "v": "mẫu",
+          "a": "bccba97727f96c00"
+        },
+        {
+          "h": "시험시간",
+          "p": "siheomsigan",
+          "v": "thời gian thử",
+          "a": "3eb505f202931c67"
+        },
+        {
+          "h": "시험장소",
+          "p": "siheomjangso",
+          "v": "nơi thử",
+          "a": "8ce0f47dfb2ae2d6"
+        },
+        {
+          "h": "결과",
+          "p": "gyeolgwa",
+          "v": "kết quả",
+          "a": "109383e344db8ae5"
+        },
+        {
+          "h": "중단",
+          "p": "jungdan",
+          "v": "dừng giữa chừng",
+          "a": "f14d9681be156677"
+        }
+      ],
+      "sentence": {
+        "h": "시험 조건을 확인해 주세요. 시험 결과를 보고하겠습니다.",
+        "p": "siheom jogeoneul hwaginhae juseyo siheom gyeolgwareul bogohagetseumnida",
+        "v": "Hãy kiểm tra điều kiện thử nghiệm. Tôi sẽ báo cáo kết quả thử.",
+        "a": "a21634243e0af2d2"
+      }
+    },
+    {
+      "title": "Vật liệu và phê duyệt",
+      "note": "입고되었습니다: đã nhập vào kho. 승인 후: sau khi phê duyệt. 전에: trước khi... 유효기간을 확인해 주세요 yêu cầu kiểm tra hiệu lực. 승인 nghĩa phê duyệt; không đồng nghĩa kiểm tra đạt.",
+      "words": [
+        {
+          "h": "자재",
+          "p": "jajae",
+          "v": "vật liệu",
+          "a": "f51bc06afc3adeb6"
+        },
+        {
+          "h": "입고",
+          "p": "ipgo",
+          "v": "nhập kho",
+          "a": "abf4f911317e9d7b"
+        },
+        {
+          "h": "발주",
+          "p": "balju",
+          "v": "đặt hàng",
+          "a": "8e0ce9271ed0c037"
+        },
+        {
+          "h": "구매",
+          "p": "gumae",
+          "v": "mua hàng",
+          "a": "33500a787e27c740"
+        },
+        {
+          "h": "승인",
+          "p": "seungin",
+          "v": "phê duyệt",
+          "a": "ae0b472e631ddef7"
+        },
+        {
+          "h": "보류",
+          "p": "boryu",
+          "v": "tạm giữ / tạm hoãn",
+          "a": "a98f51efdfc6077b"
+        },
+        {
+          "h": "반품",
+          "p": "banpum",
+          "v": "trả hàng",
+          "a": "805a2d2e7c6e85f9"
+        },
+        {
+          "h": "대체품",
+          "p": "daechepum",
+          "v": "hàng thay thế",
+          "a": "f759e80cad0e34c9"
+        },
+        {
+          "h": "로트",
+          "p": "roteu",
+          "v": "lô lot",
+          "a": "2ac15efa5f11d5ef"
+        },
+        {
+          "h": "유효기간",
+          "p": "yuhyogigan",
+          "v": "thời hạn hiệu lực",
+          "a": "8a6a4c8ca03f313d"
+        },
+        {
+          "h": "성적서",
+          "p": "seongjeokseo",
+          "v": "báo cáo kết quả kiểm tra",
+          "a": "9a30c02228f1a334"
+        },
+        {
+          "h": "변경",
+          "p": "byeongyeong",
+          "v": "thay đổi",
+          "a": "16f64fe47b163b81"
+        }
+      ],
+      "sentence": {
+        "h": "자재가 입고되었습니다. 검사와 승인 후 사용해 주세요.",
+        "p": "jajaega ipgodoeeotseumnida geomsawa seungin hu sayonghae juseyo",
+        "v": "Vật liệu đã nhập kho. Hãy sử dụng sau khi kiểm tra và phê duyệt.",
+        "a": "61b577e5a36f5f8a"
+      }
+    },
+    {
+      "title": "Kho nhãn và truy xuất",
+      "note": "표시하다: đánh dấu/ghi nhãn. 로트 번호: số lô. 따로 보관해 주세요: hãy bảo quản riêng. 재고와 기록을 대조합니다: đối chiếu tồn kho với ghi chép. Không tự quyết định MRB nếu chưa có quy trình/ủy quyền.",
+      "words": [
+        {
+          "h": "재고",
+          "p": "jaego",
+          "v": "tồn kho",
+          "a": "6e1b9aecaabc2f38"
+        },
+        {
+          "h": "보관",
+          "p": "bogwan",
+          "v": "lưu kho / bảo quản",
+          "a": "2e4099bad3f859dc"
+        },
+        {
+          "h": "출고",
+          "p": "chulgo",
+          "v": "xuất kho",
+          "a": "b618f6fa2ea7dfea"
+        },
+        {
+          "h": "상자",
+          "p": "sangja",
+          "v": "thùng / hộp",
+          "a": "e6bb1dea433d8fa4"
+        },
+        {
+          "h": "포장",
+          "p": "pojang",
+          "v": "đóng gói",
+          "a": "2bafb453d96b3725"
+        },
+        {
+          "h": "바코드",
+          "p": "bakodeu",
+          "v": "mã vạch",
+          "a": "15556ba22504072c"
+        },
+        {
+          "h": "번호",
+          "p": "beonho",
+          "v": "số / mã",
+          "a": "00e65ebb3d8a52e5"
+        },
+        {
+          "h": "표시",
+          "p": "pyosi",
+          "v": "đánh dấu / ký hiệu",
+          "a": "487749b84d4d7f4f"
+        },
+        {
+          "h": "추적",
+          "p": "chujeok",
+          "v": "truy xuất",
+          "a": "adcc56b19eafefb6"
+        },
+        {
+          "h": "이력",
+          "p": "iryeok",
+          "v": "lịch sử",
+          "a": "39e7ffe391b3c808"
+        },
+        {
+          "h": "유통기한",
+          "p": "yutonggihan",
+          "v": "hạn sử dụng / lưu thông",
+          "a": "e68309c0a7388d50"
+        },
+        {
+          "h": "선입선출",
+          "p": "seonipseonchul",
+          "v": "nhập trước xuất trước FIFO",
+          "a": "cf9524cc9301a4ca"
+        }
+      ],
+      "sentence": {
+        "h": "상자에 로트 번호를 표시해 주세요. 보류 자재는 따로 보관해 주세요.",
+        "p": "sangjae roteu beonhoreul pyosihae juseyo boryu jajaeneun ttaro bogwanhae juseyo",
+        "v": "Hãy ghi số lô trên thùng. Hãy lưu riêng vật liệu tạm giữ.",
+        "a": "0be84d7769fb9a59"
+      }
+    },
+    {
+      "title": "Xuất hàng và giao hàng",
+      "note": "출하 xuất hàng từ nhà máy; 납품 giao hàng cho khách hàng. 예정입니다: dự kiến... 지연되었습니다: đã bị chậm. Ngày/giờ và số lượng phải nói rõ để tránh nhầm lẫn.",
+      "words": [
+        {
+          "h": "출하",
+          "p": "chulha",
+          "v": "xuất hàng",
+          "a": "856add5f79f27869"
+        },
+        {
+          "h": "납품",
+          "p": "nappum",
+          "v": "giao hàng",
+          "a": "109b13c5ee9967b3"
+        },
+        {
+          "h": "배송",
+          "p": "baesong",
+          "v": "vận chuyển giao",
+          "a": "9c5a604dbc05e8de"
+        },
+        {
+          "h": "납기",
+          "p": "napgi",
+          "v": "hạn giao hàng",
+          "a": "c4af16501d30da10"
+        },
+        {
+          "h": "일정",
+          "p": "iljeong",
+          "v": "lịch trình",
+          "a": "510d062ea38e7953"
+        },
+        {
+          "h": "지연",
+          "p": "jiyeon",
+          "v": "chậm trễ",
+          "a": "b1c21ded73e886ca"
+        },
+        {
+          "h": "완제품",
+          "p": "wanjepum",
+          "v": "thành phẩm",
+          "a": "c0908fc850c2ed2e"
+        },
+        {
+          "h": "포장명세서",
+          "p": "pojangmyeongseo",
+          "v": "packing list",
+          "a": "b08e540febb3d68a"
+        },
+        {
+          "h": "송장",
+          "p": "songjang",
+          "v": "hóa đơn / vận đơn theo ngữ cảnh",
+          "a": "ec18864faf41c4c0"
+        },
+        {
+          "h": "운송",
+          "p": "unsong",
+          "v": "vận chuyển",
+          "a": "723218fd92bdb585"
+        },
+        {
+          "h": "수출",
+          "p": "suchul",
+          "v": "xuất khẩu",
+          "a": "fbc626f7f124c339"
+        },
+        {
+          "h": "목적지",
+          "p": "mokjeokji",
+          "v": "nơi đến",
+          "a": "4e02e650e4bcbdca"
+        }
+      ],
+      "sentence": {
+        "h": "출하는 내일 오후에 예정되어 있습니다. 수량과 포장을 확인해 주세요.",
+        "p": "chulhaneun naeil ohue yejeongdoeeo itseumnida suryanggwa pojangeul hwaginhae juseyo",
+        "v": "Dự kiến xuất hàng chiều mai. Hãy kiểm tra số lượng và đóng gói.",
+        "a": "7d786c8a3e8d1f8a"
+      }
+    },
+    {
+      "title": "Báo cáo tiến độ và nguyên nhân",
+      "note": "...때문에: vì... -(으)ㄹ 예정입니다: dự kiến sẽ... 확인 중입니다: đang xác nhận. Nêu việc đã biết và việc còn chờ; dùng 원인 확인 중 để tránh biến giả thiết thành kết luận.",
+      "words": [
+        {
+          "h": "현재",
+          "p": "hyeonjae",
+          "v": "hiện tại",
+          "a": "72d2bae2a744d54f"
+        },
+        {
+          "h": "상태",
+          "p": "sangtae",
+          "v": "trạng thái",
+          "a": "e10195a1239fb321"
+        },
+        {
+          "h": "미완료",
+          "p": "miwallyo",
+          "v": "chưa hoàn thành",
+          "a": "987c6c1ea0e177fc"
+        },
+        {
+          "h": "진행률",
+          "p": "jinhaengnyul",
+          "v": "tỷ lệ tiến độ",
+          "a": "af6292b9a32e2c9c"
+        },
+        {
+          "h": "문제",
+          "p": "munje",
+          "v": "vấn đề",
+          "a": "bc0fca46ae9a4879"
+        },
+        {
+          "h": "원인",
+          "p": "wonin",
+          "v": "nguyên nhân",
+          "a": "b84254868f623d27"
+        },
+        {
+          "h": "대책",
+          "p": "daechaek",
+          "v": "biện pháp",
+          "a": "0cb854c7ace0b785"
+        },
+        {
+          "h": "조치",
+          "p": "jochi",
+          "v": "hành động xử lý",
+          "a": "6530a5348b9c420f"
+        },
+        {
+          "h": "재작업",
+          "p": "jaejageop",
+          "v": "làm lại",
+          "a": "7cfa3032948a1a43"
+        },
+        {
+          "h": "선별",
+          "p": "seonbyeol",
+          "v": "sàng lọc",
+          "a": "1496ab7d5f78056d"
+        },
+        {
+          "h": "예정",
+          "p": "yejeong",
+          "v": "dự kiến",
+          "a": "8688e9ff7c84e0e4"
+        },
+        {
+          "h": "긴급",
+          "p": "gingeup",
+          "v": "khẩn cấp",
+          "a": "542d2b212edddf53"
+        }
+      ],
+      "sentence": {
+        "h": "현재 선별 작업이 진행 중입니다. 원인은 확인 중입니다.",
+        "p": "hyeonjae seonbyeol jageobi jinhaeng jungimnida wonineun hwagin jungimnida",
+        "v": "Hiện đang sàng lọc. Đang xác nhận nguyên nhân.",
+        "a": "1eb636a21d405898"
+      }
+    },
+    {
+      "title": "Họp và trao đổi",
+      "note": "-(으)시겠습니까？ là hỏi lịch sự về ý muốn. 참석해 주시겠습니까？ anh chị có thể tham dự không? hiểu rồi: 이해했습니다. Chưa hiểu: 이해하지 못했습니다. Hãy xin nói lại khi cần.",
+      "words": [
+        {
+          "h": "회의",
+          "p": "hoeui",
+          "v": "cuộc họp",
+          "a": "8ada2d6d6aa420fc"
+        },
+        {
+          "h": "참석",
+          "p": "chamseok",
+          "v": "tham dự",
+          "a": "8cc179320e904750"
+        },
+        {
+          "h": "안건",
+          "p": "angeon",
+          "v": "nội dung nghị sự",
+          "a": "6f75174430ba9289"
+        },
+        {
+          "h": "의견",
+          "p": "uigyeon",
+          "v": "ý kiến",
+          "a": "1eaed37a207480d8"
+        },
+        {
+          "h": "질문",
+          "p": "jilmun",
+          "v": "câu hỏi",
+          "a": "32729cc3f7b6d44a"
+        },
+        {
+          "h": "설명",
+          "p": "seolmyeong",
+          "v": "giải thích",
+          "a": "8c3f651d3083e63d"
+        },
+        {
+          "h": "이해하다",
+          "p": "ihaehada",
+          "v": "hiểu",
+          "a": "fc001754fa34535b"
+        },
+        {
+          "h": "동의하다",
+          "p": "donguihada",
+          "v": "đồng ý",
+          "a": "5518dc49fcb84589"
+        },
+        {
+          "h": "결정",
+          "p": "gyeoljeong",
+          "v": "quyết định",
+          "a": "3725567246990eb8"
+        },
+        {
+          "h": "공유",
+          "p": "gongyu",
+          "v": "chia sẻ",
+          "a": "d62648e19143c34d"
+        },
+        {
+          "h": "다음",
+          "p": "daeum",
+          "v": "tiếp theo",
+          "a": "aef613c6612d424a"
+        },
+        {
+          "h": "회의록",
+          "p": "hoeuirok",
+          "v": "biên bản họp",
+          "a": "96d8476a886fac88"
+        }
+      ],
+      "sentence": {
+        "h": "회의는 오전 아홉 시에 시작합니다. 참석해 주시겠습니까?",
+        "p": "hoeuineun ojeon ahop sie sijakhamnida chamseokhae jusigetseumnikka",
+        "v": "Cuộc họp bắt đầu lúc 9 giờ sáng. Anh chị có thể tham dự không?",
+        "a": "6e2c7a120c5a633f"
+      }
+    },
+    {
+      "title": "Tài liệu báo cáo và ISO",
+      "note": "서명 là ký tên; 날인 là đóng dấu. 회사 직인 là con dấu công ty. 검토 후 승인해 주세요: hãy phê duyệt sau khi xem xét. Nói rõ người có quyền ký theo quy định công ty.",
+      "words": [
+        {
+          "h": "보고서",
+          "p": "bogoseo",
+          "v": "báo cáo",
+          "a": "01a64adf7f150065"
+        },
+        {
+          "h": "문서",
+          "p": "munseo",
+          "v": "tài liệu",
+          "a": "50da0b175337961e"
+        },
+        {
+          "h": "기록",
+          "p": "girok",
+          "v": "ghi chép / hồ sơ",
+          "a": "6e8b375a38c1e33c"
+        },
+        {
+          "h": "서명",
+          "p": "seomyeong",
+          "v": "chữ ký / ký tên",
+          "a": "59151adf426dd64d"
+        },
+        {
+          "h": "날인",
+          "p": "narin",
+          "v": "đóng dấu",
+          "a": "96b3945fd9cdd4fa"
+        },
+        {
+          "h": "직인",
+          "p": "jigin",
+          "v": "con dấu chính thức",
+          "a": "c2c25ba0a53a6f7b"
+        },
+        {
+          "h": "검토",
+          "p": "geomto",
+          "v": "xem xét",
+          "a": "7e0e212667f735a4"
+        },
+        {
+          "h": "심사",
+          "p": "simsa",
+          "v": "đánh giá audit",
+          "a": "e5d4b120f28c3201"
+        },
+        {
+          "h": "시정조치",
+          "p": "sijeongjochi",
+          "v": "hành động khắc phục",
+          "a": "3840192c14cbbd67"
+        },
+        {
+          "h": "절차서",
+          "p": "jeolchaseo",
+          "v": "quy trình",
+          "a": "d874addea622b4bb"
+        },
+        {
+          "h": "첨부파일",
+          "p": "cheombupail",
+          "v": "tệp đính kèm",
+          "a": "0e89a5d4dfa949ef"
+        },
+        {
+          "h": "최신본",
+          "p": "choesinbon",
+          "v": "bản mới nhất",
+          "a": "b86e902f51ceef10"
+        }
+      ],
+      "sentence": {
+        "h": "첨부 보고서를 검토해 주세요. 서명과 회사 직인이 필요합니다.",
+        "p": "cheombu bogoseoreul geomtohae juseyo seomyeonggwa hoesa jigini piryohamnida",
+        "v": "Hãy xem xét báo cáo đính kèm. Cần chữ ký và con dấu công ty.",
+        "a": "bbcdaba861116e12"
+      }
+    },
+    {
+      "title": "Nhà cung cấp và khách hàng",
+      "note": "지원 요청: yêu cầu hỗ trợ. 회신 부탁드립니다: kính nhờ phản hồi. 교체 가능 수량: số lượng có thể thay thế. Xác nhận lịch và phạm vi hỗ trợ bằng câu rõ ràng, không hứa trước khi được phê duyệt.",
+      "words": [
+        {
+          "h": "공급업체",
+          "p": "gonggeubeopche",
+          "v": "nhà cung cấp",
+          "a": "3429990c4012a154"
+        },
+        {
+          "h": "고객사",
+          "p": "gogaeksa",
+          "v": "công ty khách hàng",
+          "a": "6e85dea812833440"
+        },
+        {
+          "h": "요청",
+          "p": "yocheong",
+          "v": "yêu cầu",
+          "a": "be41aba2fd84362b"
+        },
+        {
+          "h": "회신",
+          "p": "hoesin",
+          "v": "phản hồi",
+          "a": "f75129af7fe8caf0"
+        },
+        {
+          "h": "지원",
+          "p": "jiwon",
+          "v": "hỗ trợ",
+          "a": "0e7cfc63937a1417"
+        },
+        {
+          "h": "교체",
+          "p": "gyoche",
+          "v": "thay thế",
+          "a": "084c5a6dd787cccb"
+        },
+        {
+          "h": "반환",
+          "p": "banhwan",
+          "v": "trả lại",
+          "a": "269dab7f8c65a63a"
+        },
+        {
+          "h": "방문",
+          "p": "bangmun",
+          "v": "đến thăm",
+          "a": "c7fb6968a656c7d2"
+        },
+        {
+          "h": "협의",
+          "p": "hyeobui",
+          "v": "trao đổi thống nhất",
+          "a": "4ac035ba5ceb07e1"
+        },
+        {
+          "h": "요구사항",
+          "p": "yogusahang",
+          "v": "yêu cầu cụ thể",
+          "a": "3131473dcf61b625"
+        },
+        {
+          "h": "견적",
+          "p": "gyeonjeok",
+          "v": "báo giá",
+          "a": "616a0401ce31e5db"
+        },
+        {
+          "h": "연락",
+          "p": "yeollak",
+          "v": "liên hệ",
+          "a": "b1c3b94a6a87c1f5"
+        }
+      ],
+      "sentence": {
+        "h": "불량 수량은 백 개입니다. 교체 가능 수량을 확인하고 회신 부탁드립니다.",
+        "p": "bullyang suryangeun baek gaeimnida gyoche ganeung suryangeul hwaginhago hoesin butakdeurimnida",
+        "v": "Số lượng lỗi là 100 cái. Kính nhờ xác nhận số lượng có thể thay thế và phản hồi.",
+        "a": "92deeda48bd6238f"
+      }
+    },
+    {
+      "title": "Sự cố thiết bị và xin hỗ trợ",
+      "note": "...이/가 고장 났습니다: bị hỏng. -아서/어서 nói lý do: 지그가 없어서 측정할 수 없습니다. Không thể đo do thiếu jig là vấn đề điều kiện đo, chưa phải kết luận sản phẩm lỗi.",
+      "words": [
+        {
+          "h": "설비",
+          "p": "seolbi",
+          "v": "thiết bị sản xuất",
+          "a": "559b648375c61ade"
+        },
+        {
+          "h": "고장",
+          "p": "gojang",
+          "v": "hỏng",
+          "a": "a1a759c684921a8d"
+        },
+        {
+          "h": "수리",
+          "p": "suri",
+          "v": "sửa chữa",
+          "a": "b75ba9f82e45cc31"
+        },
+        {
+          "h": "점검",
+          "p": "jeomgeom",
+          "v": "kiểm tra tình trạng",
+          "a": "4fd02e48abf898fd"
+        },
+        {
+          "h": "모터",
+          "p": "moteo",
+          "v": "động cơ",
+          "a": "5934b0deb309b03b"
+        },
+        {
+          "h": "프로그램",
+          "p": "peurogeuraem",
+          "v": "chương trình",
+          "a": "f5044b9ba86548c9"
+        },
+        {
+          "h": "부족",
+          "p": "bujok",
+          "v": "thiếu",
+          "a": "da5d28ca3f995c9d"
+        },
+        {
+          "h": "불가능",
+          "p": "bulganeung",
+          "v": "không thể",
+          "a": "9656835c68347a6a"
+        },
+        {
+          "h": "가능",
+          "p": "ganeung",
+          "v": "có thể",
+          "a": "b7cf3c6a0f51c895"
+        },
+        {
+          "h": "필요하다",
+          "p": "piryohada",
+          "v": "cần",
+          "a": "b98947c9698402e3"
+        },
+        {
+          "h": "재확인",
+          "p": "jaehwagin",
+          "v": "xác nhận lại",
+          "a": "ae4c1e53f8d97c53"
+        },
+        {
+          "h": "해결",
+          "p": "haegyeol",
+          "v": "giải quyết",
+          "a": "774be83e44842779"
+        }
+      ],
+      "sentence": {
+        "h": "지그가 없어서 측정할 수 없습니다. 담당자의 지원이 필요합니다.",
+        "p": "jigeuga eopseoseo cheukjeonghal su eopseumnida damdangjaui jiwoni piryohamnida",
+        "v": "Không thể đo vì không có jig. Cần người phụ trách hỗ trợ.",
+        "a": "fb46fcd7996b55d0"
+      }
+    },
+    {
+      "title": "Bàn giao và tổng ôn",
+      "note": "Ghép thành báo cáo 60–90 giây: tên/nhóm, việc đã làm, kết quả, việc chờ, người phụ trách và hạn hoàn thành. 인계하다 bàn giao, 인수하다 tiếp nhận. Kiểm tra cuối khóa dùng mục học của tất cả các tuần.",
+      "words": [
+        {
+          "h": "인수인계",
+          "p": "insu-ingye",
+          "v": "bàn giao tiếp nhận",
+          "a": "c5874a5548b3590e"
+        },
+        {
+          "h": "인계하다",
+          "p": "ingyehada",
+          "v": "bàn giao",
+          "a": "0285a63f26c4319f"
+        },
+        {
+          "h": "인수하다",
+          "p": "insuhada",
+          "v": "tiếp nhận",
+          "a": "a0694cf31feed74a"
+        },
+        {
+          "h": "업무",
+          "p": "eommu",
+          "v": "công việc / nhiệm vụ",
+          "a": "1377bb69d5f7d43c"
+        },
+        {
+          "h": "후임자",
+          "p": "huimja",
+          "v": "người tiếp nhiệm",
+          "a": "9040a65bc7391a61"
+        },
+        {
+          "h": "인계서",
+          "p": "ingyeseo",
+          "v": "biên bản bàn giao",
+          "a": "40cb22f51d4951fb"
+        },
+        {
+          "h": "교육",
+          "p": "gyoyuk",
+          "v": "đào tạo",
+          "a": "4da9a75910ede3ad"
+        },
+        {
+          "h": "기한",
+          "p": "gihan",
+          "v": "thời hạn",
+          "a": "ada5d155b0354ee2"
+        },
+        {
+          "h": "진척상황",
+          "p": "jincheoksanghwang",
+          "v": "tình hình tiến độ",
+          "a": "9086258d39e1a8a1"
+        },
+        {
+          "h": "미결사항",
+          "p": "migyeolsahang",
+          "v": "việc chưa giải quyết",
+          "a": "7bea9b6d11336411"
+        },
+        {
+          "h": "책임자",
+          "p": "chaegimja",
+          "v": "người chịu trách nhiệm",
+          "a": "34f0309a2e61fbea"
+        },
+        {
+          "h": "정리하다",
+          "p": "jeongnihada",
+          "v": "tổng hợp / sắp xếp",
+          "a": "7b53a03fb69e532d"
+        }
+      ],
+      "sentence": {
+        "h": "미결사항과 기한을 정리했습니다. 담당자에게 업무를 인계하겠습니다.",
+        "p": "migyeolsahanggwa gihaneul jeongnihaetseumnida damdangjaege eommureul ingyehagetseumnida",
+        "v": "Đã tổng hợp việc chưa giải quyết và thời hạn. Tôi sẽ bàn giao công việc cho người phụ trách.",
+        "a": "4a4fa753bead0657"
+      }
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "week": 0,
+      "phase": 0,
+      "title": "Từ mới và phát âm",
+      "drill": {
+        "glyph": "ㅏ · ㅓ · ㅗ · ㅜ · ㅡ · ㅣ",
+        "h": "아, 어, 오, 우, 으, 이.",
+        "p": "a eo o u eu i",
+        "v": "Nghe 6 nguyên âm. ㅓ và ㅗ khác nhau; ㅡ không đọc như u.",
+        "a": "c4532dcaf24facce"
+      }
+    },
+    {
+      "day": 2,
+      "week": 0,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm",
+      "drill": {
+        "glyph": "ㄱ · ㄴ · ㄷ · ㄹ · ㅁ",
+        "h": "가, 나, 다, 라, 마.",
+        "p": "ga na da ra ma",
+        "v": "Ghép phụ âm với ㅏ. ㄹ đầu âm tiết gần âm r nhẹ, cuối âm tiết gần l.",
+        "a": "c7919892d91776e4"
+      }
+    },
+    {
+      "day": 3,
+      "week": 0,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu",
+      "drill": {
+        "glyph": "ㅂ · ㅅ · ㅇ · ㅈ · ㅎ",
+        "h": "바, 사, 아, 자, 하.",
+        "p": "ba sa a ja ha",
+        "v": "ㅇ đứng đầu không phát âm; đứng cuối thường có âm ng.",
+        "a": "db78cebbd8c5223f"
+      }
+    },
+    {
+      "day": 4,
+      "week": 0,
+      "phase": 3,
+      "title": "Nghe rồi trả lời",
+      "drill": {
+        "glyph": "ㄱ / ㅋ · ㄷ / ㅌ · ㅂ / ㅍ · ㅈ / ㅊ",
+        "h": "가, 카, 다, 타, 바, 파, 자, 차.",
+        "p": "ga ka da ta ba pa ja cha",
+        "v": "Âm bật hơi ㅋ ㅌ ㅍ ㅊ: đặt tay trước miệng để cảm nhận luồng hơi.",
+        "a": "2a9fbf1d4629f238"
+      }
+    },
+    {
+      "day": 5,
+      "week": 0,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết",
+      "drill": {
+        "glyph": "ㄲ · ㄸ · ㅃ · ㅆ · ㅉ",
+        "h": "까, 따, 빠, 싸, 짜.",
+        "p": "kka tta ppa ssa jja",
+        "v": "Âm căng không phải đọc to hơn đơn thuần. Nghe sự khác nhau với âm thường và âm bật hơi.",
+        "a": "ce4e70658d542fa9"
+      }
+    },
+    {
+      "day": 6,
+      "week": 0,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm",
+      "drill": {
+        "glyph": "ㅏ · ㅑ · ㅓ · ㅕ · ㅗ · ㅛ · ㅜ · ㅠ",
+        "h": "아, 야, 어, 여, 오, 요, 우, 유.",
+        "p": "a ya eo yeo o yo u yu",
+        "v": "Thêm nét tạo các nguyên âm có âm y. Đọc chậm từng khối rồi đọc liền.",
+        "a": "edb5f52ffe264a7e"
+      }
+    },
+    {
+      "day": 7,
+      "week": 0,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra",
+      "drill": {
+        "glyph": "가 나 다 라 마 바 사 아 자 차 카 타 파 하",
+        "h": "가, 나, 다, 라, 마, 바, 사, 아, 자, 차, 카, 타, 파, 하.",
+        "p": "ga na da ra ma ba sa a ja cha ka ta pa ha",
+        "v": "Ôn đọc không nhìn gợi âm, nhận mặt chữ và tự ghi âm.",
+        "a": "1e59197e82a5677d"
+      }
+    },
+    {
+      "day": 8,
+      "week": 1,
+      "phase": 0,
+      "title": "Từ mới và phát âm",
+      "drill": {
+        "glyph": "ㅐ · ㅔ · ㅘ · ㅝ · ㅟ · ㅢ",
+        "h": "애, 에, 와, 워, 위, 의.",
+        "p": "ae e wa wo wi ui",
+        "v": "Nguyên âm ghép. ㅐ/ㅔ có thể rất gần nhau trong tiếng Hàn hiện đại; 의 thay cách đọc theo vị trí.",
+        "a": "350511eaf62c0d52"
+      }
+    },
+    {
+      "day": 9,
+      "week": 1,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm",
+      "drill": {
+        "glyph": "ㄱ · ㄴ · ㄷ · ㄹ · ㅁ · ㅂ · ㅇ (받침)",
+        "h": "국, 눈, 옷, 달, 밤, 밥, 강.",
+        "p": "guk nun ot dal bam bap gang",
+        "v": "Phụ âm cuối thường không bật ra thêm nguyên âm. 옷 đọc với âm cuối t, không đọc thành o-seu.",
+        "a": "2420b2fde447f8b8"
+      }
+    },
+    {
+      "day": 10,
+      "week": 1,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu",
+      "drill": {
+        "glyph": "먹어요 · 읽어요 · 한국어",
+        "h": "먹어요. 읽어요. 한국어.",
+        "p": "meogeoyo ilgeoyo hangugeo",
+        "v": "Nối âm với âm tiết sau bắt đầu bằng ㅇ: 먹어요 nghe gần 머거요. 받침 kép cần nghe từ thực tế.",
+        "a": "0642ada71659f970"
+      }
+    },
+    {
+      "day": 11,
+      "week": 1,
+      "phase": 3,
+      "title": "Nghe rồi trả lời",
+      "drill": {
+        "glyph": "국물 · 입니다 · 합니다",
+        "h": "국물. 입니다. 합니다.",
+        "p": "gungmul imnida hamnida",
+        "v": "Một số âm biến đổi: 국물 nghe gần 궁물; 입니다/합니다 có âm m-n. Gợi âm không thay thế audio.",
+        "a": "d54837ffc8b046fa"
+      }
+    },
+    {
+      "day": 12,
+      "week": 1,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết",
+      "drill": {
+        "glyph": "안녕 · 사람 · 회사",
+        "h": "안녕. 사람. 회사.",
+        "p": "annyeong saram hoesa",
+        "v": "Đọc từng khối âm tiết rồi ghép thành từ. Viết khối gọn trong ô vuông.",
+        "a": "3bc3e4609871af61"
+      }
+    },
+    {
+      "day": 13,
+      "week": 1,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm",
+      "drill": {
+        "glyph": "안녕하세요 · 감사합니다",
+        "h": "안녕하세요. 감사합니다.",
+        "p": "annyeonghaseyo gamsahamnida",
+        "v": "Nghe cả cụm, nhắc từng phần rồi cả câu. Giọng lịch sự dùng trong công ty.",
+        "a": "9fdafda7498a9251"
+      }
+    },
+    {
+      "day": 14,
+      "week": 1,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra",
+      "drill": {
+        "glyph": "한국어를 배웁니다",
+        "h": "한국어를 배웁니다.",
+        "p": "hangugeoreul baeumnida",
+        "v": "Kiểm tra hai tuần đầu: đọc Hangul không nhìn Latin; so bản ghi với mẫu.",
+        "a": "395ce7710bee2150"
+      }
+    },
+    {
+      "day": 15,
+      "week": 2,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 16,
+      "week": 2,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 17,
+      "week": 2,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 18,
+      "week": 2,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 19,
+      "week": 2,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 20,
+      "week": 2,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 21,
+      "week": 2,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 22,
+      "week": 3,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 23,
+      "week": 3,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 24,
+      "week": 3,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 25,
+      "week": 3,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 26,
+      "week": 3,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 27,
+      "week": 3,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 28,
+      "week": 3,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 29,
+      "week": 4,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 30,
+      "week": 4,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 31,
+      "week": 4,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 32,
+      "week": 4,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 33,
+      "week": 4,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 34,
+      "week": 4,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 35,
+      "week": 4,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 36,
+      "week": 5,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 37,
+      "week": 5,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 38,
+      "week": 5,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 39,
+      "week": 5,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 40,
+      "week": 5,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 41,
+      "week": 5,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 42,
+      "week": 5,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 43,
+      "week": 6,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 44,
+      "week": 6,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 45,
+      "week": 6,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 46,
+      "week": 6,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 47,
+      "week": 6,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 48,
+      "week": 6,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 49,
+      "week": 6,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 50,
+      "week": 7,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 51,
+      "week": 7,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 52,
+      "week": 7,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 53,
+      "week": 7,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 54,
+      "week": 7,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 55,
+      "week": 7,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 56,
+      "week": 7,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 57,
+      "week": 8,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 58,
+      "week": 8,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 59,
+      "week": 8,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 60,
+      "week": 8,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 61,
+      "week": 8,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 62,
+      "week": 8,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 63,
+      "week": 8,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 64,
+      "week": 9,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 65,
+      "week": 9,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 66,
+      "week": 9,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 67,
+      "week": 9,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 68,
+      "week": 9,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 69,
+      "week": 9,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 70,
+      "week": 9,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 71,
+      "week": 10,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 72,
+      "week": 10,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 73,
+      "week": 10,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 74,
+      "week": 10,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 75,
+      "week": 10,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 76,
+      "week": 10,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 77,
+      "week": 10,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 78,
+      "week": 11,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 79,
+      "week": 11,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 80,
+      "week": 11,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 81,
+      "week": 11,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 82,
+      "week": 11,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 83,
+      "week": 11,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 84,
+      "week": 11,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 85,
+      "week": 12,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 86,
+      "week": 12,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 87,
+      "week": 12,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 88,
+      "week": 12,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 89,
+      "week": 12,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 90,
+      "week": 12,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 91,
+      "week": 12,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 92,
+      "week": 13,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 93,
+      "week": 13,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 94,
+      "week": 13,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 95,
+      "week": 13,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 96,
+      "week": 13,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 97,
+      "week": 13,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 98,
+      "week": 13,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 99,
+      "week": 14,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 100,
+      "week": 14,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 101,
+      "week": 14,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 102,
+      "week": 14,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 103,
+      "week": 14,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 104,
+      "week": 14,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 105,
+      "week": 14,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 106,
+      "week": 15,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 107,
+      "week": 15,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 108,
+      "week": 15,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 109,
+      "week": 15,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 110,
+      "week": 15,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 111,
+      "week": 15,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 112,
+      "week": 15,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 113,
+      "week": 16,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 114,
+      "week": 16,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 115,
+      "week": 16,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 116,
+      "week": 16,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 117,
+      "week": 16,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 118,
+      "week": 16,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 119,
+      "week": 16,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 120,
+      "week": 17,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 121,
+      "week": 17,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 122,
+      "week": 17,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 123,
+      "week": 17,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 124,
+      "week": 17,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 125,
+      "week": 17,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 126,
+      "week": 17,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 127,
+      "week": 18,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 128,
+      "week": 18,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 129,
+      "week": 18,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 130,
+      "week": 18,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 131,
+      "week": 18,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 132,
+      "week": 18,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 133,
+      "week": 18,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 134,
+      "week": 19,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 135,
+      "week": 19,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 136,
+      "week": 19,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 137,
+      "week": 19,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 138,
+      "week": 19,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 139,
+      "week": 19,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 140,
+      "week": 19,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 141,
+      "week": 20,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 142,
+      "week": 20,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 143,
+      "week": 20,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 144,
+      "week": 20,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 145,
+      "week": 20,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 146,
+      "week": 20,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 147,
+      "week": 20,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 148,
+      "week": 21,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 149,
+      "week": 21,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 150,
+      "week": 21,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 151,
+      "week": 21,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 152,
+      "week": 21,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 153,
+      "week": 21,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 154,
+      "week": 21,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 155,
+      "week": 22,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 156,
+      "week": 22,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 157,
+      "week": 22,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 158,
+      "week": 22,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 159,
+      "week": 22,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 160,
+      "week": 22,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 161,
+      "week": 22,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 162,
+      "week": 23,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 163,
+      "week": 23,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 164,
+      "week": 23,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 165,
+      "week": 23,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 166,
+      "week": 23,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 167,
+      "week": 23,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 168,
+      "week": 23,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 169,
+      "week": 24,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 170,
+      "week": 24,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 171,
+      "week": 24,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 172,
+      "week": 24,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 173,
+      "week": 24,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 174,
+      "week": 24,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 175,
+      "week": 24,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    },
+    {
+      "day": 176,
+      "week": 25,
+      "phase": 0,
+      "title": "Từ mới và phát âm"
+    },
+    {
+      "day": 177,
+      "week": 25,
+      "phase": 1,
+      "title": "Nghe và phân biệt âm"
+    },
+    {
+      "day": 178,
+      "week": 25,
+      "phase": 2,
+      "title": "Từ mới và mẫu câu"
+    },
+    {
+      "day": 179,
+      "week": 25,
+      "phase": 3,
+      "title": "Nghe rồi trả lời"
+    },
+    {
+      "day": 180,
+      "week": 25,
+      "phase": 4,
+      "title": "Đọc Hangul và luyện viết"
+    },
+    {
+      "day": 181,
+      "week": 25,
+      "phase": 5,
+      "title": "Hội thoại và ghi âm"
+    },
+    {
+      "day": 182,
+      "week": 25,
+      "phase": 6,
+      "title": "Ôn tập và kiểm tra"
+    }
+  ],
+  "tasks": [
+    [
+      "Ôn 3 mục cũ (tuần đầu: xem cách ghép Hangul).",
+      "Học 6 mục đầu, nghe và đọc mỗi mục 3 lần.",
+      "Nghe câu mẫu rồi nhắc theo từng cụm.",
+      "Tự nói 3 câu; hai tuần đầu đọc âm tiết.",
+      "Viết 2 khối Hangul theo hình mẫu."
+    ],
+    [
+      "Che nghĩa và nhớ lại 6 mục đã học.",
+      "Đọc ghi chú và chú ý nguyên âm/phụ âm cuối.",
+      "Làm kiểm tra nghe trước khi nhìn chữ.",
+      "Ghi âm 6 mục và so với giọng mẫu.",
+      "Viết 2 khối Hangul, đọc thành tiếng."
+    ],
+    [
+      "Ôn 6 mục đầu không nhìn nghĩa.",
+      "Học 6 mục còn lại và cách dùng trong công việc.",
+      "Nghe câu mẫu 3 lần, đọc theo từng cụm.",
+      "Thay thông tin trong mẫu bằng tên nhóm/vật liệu của mình.",
+      "Viết 2 khối Hangul mới."
+    ],
+    [
+      "Ôn đủ 12 mục của tuần.",
+      "Đọc câu mẫu và ghi chú cấu trúc.",
+      "Nghe không nhìn chữ, kể lại nghĩa tiếng Việt.",
+      "Đặt và trả lời 3 câu về chủ đề tuần.",
+      "Viết hoặc gõ một câu ngắn."
+    ],
+    [
+      "Đọc Hangul và thử nhớ nghĩa.",
+      "Che gợi âm Latin, tự đọc từ và câu mẫu.",
+      "Nghe để kiểm tra cách đọc của mình.",
+      "Tự nói 3–5 câu về chủ đề.",
+      "Viết 2 khối Hangul, so lại hình chữ."
+    ],
+    [
+      "Ôn các mục còn khó.",
+      "Soạn hội thoại 4–6 lượt theo tình huống tuần.",
+      "Nghe và nhắc lại theo nhịp, chú ý giọng lịch sự.",
+      "Ghi âm hội thoại; tự sửa một lỗi phát âm.",
+      "Viết một câu từ hội thoại."
+    ],
+    [
+      "Ôn các mục sai trong bài kiểm tra.",
+      "Làm kiểm tra đọc và nghe, xem đáp án.",
+      "Nghe lại các mục trả lời sai.",
+      "Tự báo cáo 30–60 giây; hai tuần đầu đọc âm và từ.",
+      "Viết 2 khối Hangul và đánh dấu hoàn thành."
+    ]
+  ]
+}
