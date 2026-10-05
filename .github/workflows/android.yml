@@ -44,8 +44,13 @@ jobs:
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - uses: actions/cache@v4
         with:
-          path: ~/.android/debug.keystore
-          key: korean30min-debug-signing-v1
+          path: app/debug-signing.keystore
+          key: korean30min-v2-explicit-signing-v1
+      - name: Prepare explicit development signing key
+        run: |
+          if [ ! -f app/debug-signing.keystore ]; then
+            keytool -genkeypair -keystore app/debug-signing.keystore -storepass android -keypass android -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US'
+          fi
       - name: Build and lint
         run: gradle --no-daemon :app:assembleDebug :app:lintDebug
       - name: Verify APK signature and embedded audio

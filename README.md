@@ -18,10 +18,12 @@ Bài học, ngữ pháp, ví dụ và audio đều nằm trong APK. Không xin q
 
 Android 8 trở lên. Tải APK ở **Actions → lần chạy thành công → Artifacts → Korean30min-APK**, giải nén và mở APK trên điện thoại.
 
-Korean30min 2 giữ mã ứng dụng và tên kho tiến độ cũ. Quy trình phục hồi khóa ký bản 1 từ cache để cập nhật tại chỗ. Nếu Android báo xung đột chữ ký, không gỡ bản cũ khi còn muốn giữ dữ liệu.
+Korean30min 2 dùng mã ứng dụng mới để cài song song với bản 1, vì khóa ký bản 1 không được lưu thành công. Không cần gỡ bản 1. Tiến độ bản 1 không tự chuyển sang bản 2.
 
 ## Dựng và kiểm tra
 
 Chạy `pip install pypinyin==0.53.0 gTTS==2.5.4`, `python curriculum.py`, `python expand_course.py`, `python generate_audio.py`, rồi `gradle :app:assembleDebug :app:lintDebug` với JDK 17 / Gradle 8.9 / Android SDK 35. `course.json` trong APK được sinh bởi quy trình này; file nền trong Git không chứa toàn bộ dữ liệu mở rộng.
 
 CI xác nhận 1.000 mục bổ sung không trùng, 40 bài ngữ pháp, đáp án bài tập, audio đầy đủ, chữ ký APK, và Android Lint. APK ký debug dùng để tự luyện; chưa phát hành Play Store và chưa kiểm thử trên điện thoại thật.
+
+Khóa ký phát triển bản 2 được tạo ở đường dẫn riêng và lưu cache trong GitHub Actions; không đưa vào Git. Cache có thể bị hết hạn; khi cập nhật sau này phải kiểm tra chữ ký trước.
