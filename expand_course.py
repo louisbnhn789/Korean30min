@@ -2,6 +2,7 @@ import json,hashlib
 from pathlib import Path
 from manufacturing_vocab import entries
 from grammar_content import parse,ZH,KO
+from course_additions import additions
 try:
  from pypinyin import lazy_pinyin,Style
 except ImportError:
@@ -32,7 +33,10 @@ def expand(root,lang):
  for day in course['days']:
   intro=7 if lang=='zh' else 14
   if day['day']>intro:day['grammarId']=min(40,(day['day']-intro-1)*40//(182-intro)+1)
- course.update(vocabulary=original_items+added,grammar=grammar,expansionCount=len(added),schemaVersion=2)
+ def pinyin(s):return ' '.join(lazy_pinyin(s,style=Style.TONE)) if lang=='zh' and lazy_pinyin else ''
+ extra_grammar,sources,dialogues=additions(lang,parse,pinyin)
+ grammar.extend(extra_grammar)
+ course.update(vocabulary=original_items+added,grammar=grammar,grammarSources=sources,dialogues=dialogues,expansionCount=len(added),schemaVersion=3)
  assert all(len(l['quiz'])==2 and len(l['examples'])==2 for l in grammar)
  for lesson in grammar:
   for question in lesson['quiz']:

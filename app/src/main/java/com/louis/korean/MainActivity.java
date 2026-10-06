@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
     }
     void toast(String s){Toast.makeText(this,s,Toast.LENGTH_LONG).show();}
     void home(){
-        screen("Korean30min 2 · 한국어",true);
+        screen("Korean30min 2.1 · 한국어",true);
         int done=0;for(int i=1;i<=182;i++)if(prefs.getBoolean("done"+i,false))done++;
         text("Từ số 0 · 26 tuần · 30 phút/ngày",17,false);
         text("Giao tiếp trong sản xuất · Ngữ pháp · Kho từ mở rộng",16,false);
@@ -74,7 +74,8 @@ public class MainActivity extends Activity {
         ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(182);p.setProgress(done);body.addView(p);
         int next=1;while(next<182&&prefs.getBoolean("done"+next,false))next++;
         final int start=next;button("Tiếp tục ngày "+next,()->lesson(start));
-        button("Ngữ pháp · 40 bài và bài tập",this::grammarHome);
+        button("Ngữ pháp · 48 bài · nguồn tham khảo",this::grammarHome);
+        button("Hội thoại · 16 đoạn · 10–15 giây",this::dialogueHome);
         button("Kho từ · thêm 1.000 từ/cụm từ",this::vocabularyHome);
         button("Ôn từ cần nhớ",this::review);
         button("Cách học và quyền riêng tư",this::help);
@@ -203,13 +204,16 @@ public class MainActivity extends Activity {
     }
     JSONArray bank(){return course.optJSONArray("vocabulary");}
     void grammarHome(){
-        screen("Ngữ pháp · 40 bài");button("← Trang chính",this::home);
+        screen("Ngữ pháp · 48 bài");button("← Trang chính",this::home);
         text("Học từng cấu trúc: cách dùng → ví dụ có audio → lỗi dễ nhầm → bài tập. Ưu tiên 1 bài mỗi lần học; ôn lại trước khi học cấu trúc mới.",17,false);
+        text("40 bài nền + 8 bài áp dụng đối chiếu tài liệu tham khảo. Bài 41–48 ghi nguồn ngay trong nội dung.",16,false);
+        button("8 bài ngữ pháp có nguồn",this::sourcedGrammarHome);
         JSONArray lessons=course.optJSONArray("grammar");if(lessons==null){text("Bản APK này chưa có nội dung mở rộng.",18,false);return;}
         for(int i=0;i<lessons.length();i++){final JSONObject lesson=lessons.optJSONObject(i);int id=lesson.optInt("id");button("Bài "+id+" · "+str(lesson,"title")+"\n"+str(lesson,"level")+" · điểm "+prefs.getInt("grammar"+id,0)+"/2",()->grammarLesson(lesson));}
     }
     void grammarLesson(JSONObject lesson){
         screen("Bài "+lesson.optInt("id")+" · "+str(lesson,"title"));button("← Mục ngữ pháp",this::grammarHome);
+        JSONObject source=lesson.optJSONObject("source");if(source!=null){text("Tham khảo: "+str(source,"publisher"),14,false);button("Nguồn và tài liệu gốc",()->grammarSource(source));}
         text("Cấu trúc",20,true);text(str(lesson,"pattern"),22,true);
         text("Cách dùng",20,true);text(str(lesson,"explanation"),18,false);
         text("Lỗi dễ nhầm",20,true);text(str(lesson,"mistake"),17,false);
@@ -267,6 +271,47 @@ public class MainActivity extends Activity {
     void startBankQuiz(boolean listen,String query,String category){
         ArrayList<JSONObject> pool=filteredWords(query,category);if(pool.size()<12){toast("Cần ít nhất 12 mục để kiểm tra. Hãy mở rộng tìm kiếm hoặc chọn Tất cả chủ đề.");return;}
         Collections.shuffle(pool);quizItems=new ArrayList<>(pool.subList(0,12));listening=listen;fromBank=true;q=0;score=0;question();
+    }
+
+
+    void sourcedGrammarHome(){
+        screen("Ngữ pháp có nguồn · 8 bài");button("← Mục ngữ pháp",this::grammarHome);
+        text("Giải thích tiếng Việt được tổng hợp từ quy tắc của tài liệu tham khảo; ví dụ và bài tập nhà máy viết mới. Các bài này học được offline.",17,false);
+        JSONArray lessons=course.optJSONArray("grammar");if(lessons==null)return;
+        for(int i=0;i<lessons.length();i++){JSONObject lesson=lessons.optJSONObject(i);if(lesson.optBoolean("sourced"))button("Bài "+lesson.optInt("id")+" · "+str(lesson,"title"),()->grammarLesson(lesson));}
+    }
+    void grammarSource(JSONObject source){
+        screen("Nguồn tham khảo");button("← Ngữ pháp có nguồn",this::sourcedGrammarHome);
+        text(str(source,"title"),22,true);text(str(source,"publisher"),17,false);
+        text("Đối chiếu ngày "+str(source,"reviewed"),15,false);text(str(source,"note"),16,false);text(str(source,"license"),15,false);
+        text(str(source,"url"),14,false);
+        button("Mở tài liệu gốc · cần Internet",()->{try{startActivity(new Intent(Intent.ACTION_VIEW,android.net.Uri.parse(str(source,"url"))));}catch(ActivityNotFoundException e){toast("Không tìm thấy trình duyệt để mở nguồn.");}});
+    }
+    void dialogueHome(){
+        JSONArray dialogues=course.optJSONArray("dialogues");
+        screen("Hội thoại · "+(dialogues==null?0:dialogues.length())+" đoạn");button("← Trang chính",this::home);
+        text("Giao tiếp trong công ty điện tử · mỗi đoạn 10–15 giây. Nghe không nhìn chữ, mở bản dịch, rồi đóng vai A/B để nói lại.",17,false);
+        text("Audio tổng hợp và nội dung có sẵn trong APK, học được offline.",15,false);
+        if(dialogues==null)return;
+        for(int i=0;i<dialogues.length();i++){JSONObject d=dialogues.optJSONObject(i);boolean done=prefs.getBoolean("dialogueDone"+d.optInt("id"),false);
+            button((done?"✓ ":"")+d.optInt("id")+" · "+str(d,"title")+" · "+String.format(Locale.ROOT,"%.1f",d.optDouble("durationSeconds"))+" giây",()->dialogueLesson(d));}
+    }
+    void dialogueLesson(JSONObject dialogue){
+        screen("Hội thoại "+dialogue.optInt("id")+" · "+str(dialogue,"title"));button("← Danh sách hội thoại",this::dialogueHome);
+        text(str(dialogue,"context"),18,true);
+        text("Thời lượng toàn đoạn: "+String.format(Locale.ROOT,"%.1f",dialogue.optDouble("durationSeconds"))+" giây",16,false);
+        button("▶ Nghe toàn đoạn",()->play(dialogue));
+        button("🔁 Lặp lại toàn đoạn",()->{play(dialogue);if(player!=null)player.setLooping(true);});
+        button("■ Dừng âm thanh",this::stopMedia);
+        CheckBox showMeaning=new CheckBox(this);showMeaning.setText("Hiện bản dịch tiếng Việt");showMeaning.setChecked(true);body.addView(showMeaning);
+        ArrayList<TextView> translations=new ArrayList<>();JSONArray turns=dialogue.optJSONArray("turns");
+        for(int i=0;i<turns.length();i++){JSONObject turn=turns.optJSONObject(i);text(str(turn,"speaker")+": "+str(turn,"h"),22,true);
+            if(!str(turn,"p").isEmpty())text(str(turn,"p"),16,false);
+            translations.add(text(str(turn,"v"),17,false));button("▶ Nghe lượt "+str(turn,"speaker")+" · "+(i+1),()->play(turn));}
+        showMeaning.setOnCheckedChangeListener((b,checked)->{for(TextView t:translations)t.setVisibility(checked?View.VISIBLE:View.GONE);});
+        text(str(dialogue,"note"),16,false);
+        button("🎙 Ghi âm / dừng ghi âm",this::toggleRecord);button("▶ Nghe bản ghi của mình",this::playRecording);
+        button(prefs.getBoolean("dialogueDone"+dialogue.optInt("id"),false)?"✓ Đã luyện đoạn này":"Đánh dấu đã luyện",()->{prefs.edit().putBoolean("dialogueDone"+dialogue.optInt("id"),true).apply();toast("Đã lưu hội thoại đã luyện");dialogueLesson(dialogue);});
     }
 
     @Override protected void onPause(){super.onPause();stopMedia();stopRecorder();}
